@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk & Wholesale Orders | TerraCoir Coir Mats & Jute Goods</title>
+  <meta name="description" content="Commercial wholesale pricing, volume discount tiers, custom private labeling, and container export logistics for natural coir mats and jute products.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fbeee8',
+              100: '#f7ddd1',
+              500: '#944422',
+              600: '#793417',
+              700: '#5e250f'
+            },
+            wheat: {
+              50: '#fcf8f0',
+              100: '#f7edda',
+              500: '#d4973b',
+              600: '#b87c26',
+              700: '#8c5916'
+            },
+            slate: {
+              850: '#1c2127',
+              900: '#16191c',
+              950: '#0f1114'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#faf9f6] dark:bg-[#111417] text-[#333d47] dark:text-[#e2e8f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#944422] selection:text-white w-full">
+  
+  <!-- Top Utility Bar: Deep Obsidian Slate (#16191c) -->
+  <div class="bg-[#16191c] text-[#cbd5e1] text-[11px] py-2 px-4 border-b border-[#2a3138] hidden md:block w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 truncate font-medium">
+        <span class="inline-flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-[#d4973b]"></span> FSC &amp; GOTS Certified Natural Coir &amp; Jute</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>100% Biodegradable &bull; Zero Microplastics</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>Direct Mill Hubs: Cochin &amp; Kolkata</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 font-medium">
+        <a href="tel:18005555883" class="hover:text-white transition-colors">Direct Desk: 1-800-555-COIR</a>
+        <span class="text-[#d4973b]">&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Port Logistics &amp; Showrooms</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Header (Fully Responsive from 320px to 1440px+) -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
+        
+        <!-- Brand Logo & Mark -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+              TERRA<span class="text-[#944422]">COIR</span>
+            </span>
+            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+              Natural Coir &amp; Golden Jute
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
+          
+      <div class="relative shrink-0 home-select-wrapper">
+        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
+        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
+          <option value="" selected disabled>Home Layouts &#x25BE;</option>
+          <option value="index.html">Home 1 (Consumer Retail)</option>
+          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
+        </select>
+      </div>
+          <a href="products.html" class="nav-link ">Products</a>
+          <a href="bulk-orders.html" class="nav-link active-page">Bulk Orders</a>
+          <a href="about.html" class="nav-link ">About Us</a>
+          <a href="blog.html" class="nav-link ">Blog</a>
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Desktop Header Utilities (xl: 1280px+) -->
+        <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="bulk-orders.html" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm transition-all hover:shadow whitespace-nowrap">
+            Bulk Quotation
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Controls (Active below 1280px: xl:hidden) -->
+        <div class="flex items-center gap-2 xl:hidden shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle RTL">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle Theme">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Open Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-in Modal) -->
+    <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-[#16191c]/80" aria-modal="true" role="dialog">
+      <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
+            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Home Select -->
+          <div class="space-y-1.5">
+            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
+            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
+              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Nav Links -->
+          <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+            <a href="products.html" class="mobile-nav-link ">Products</a>
+        <a href="bulk-orders.html" class="mobile-nav-link active-page">Bulk Orders</a>
+        <a href="about.html" class="mobile-nav-link ">About Us</a>
+        <a href="blog.html" class="mobile-nav-link ">Blog</a>
+        <a href="contact.html" class="mobile-nav-link ">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-[#e6decb] dark:border-[#2a3138] space-y-3">
+          <a href="bulk-orders.html" class="block w-full py-2.5 px-4 text-center bg-[#944422] text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-sm">
+            Wholesale Order Desk
+          </a>
+          <p class="text-[11px] text-[#6b7280] dark:text-[#94a3b8] text-center">
+            Toll-Free Direct: 1-800-555-COIR
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full">
+
+    <!-- Section 1: Hero Banner with Raw Background Image (Zero Overlays, Zero Opacity) -->
+    <section class="relative min-h-[380px] sm:min-h-[440px] flex items-center justify-center hero-raw-bg border-b border-[#e6decb] dark:border-[#2a3138]" style="background-image: url('https://images.pexels.com/photos/15996927/pexels-photo-15996927.jpeg');">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full flex flex-col items-center justify-center text-center">
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#16191c]/90 text-[#d4973b] text-xs font-bold uppercase tracking-wider border border-[#d4973b]/40 shadow-lg mx-auto">
+            <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+            Direct Mill Export Desks
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black hero-heavy-shadow text-white text-center">
+            Commercial Wholesale &amp; Bulk Procurement
+          </h1>
+          <p class="text-sm sm:text-base lg:text-lg text-white hero-subtext-shadow leading-relaxed font-semibold max-w-2xl mx-auto text-center">
+            Order high-tensile coir entrance mats, artisanal jute rugs, market carry bags, and civil geotextiles in bulk cartons, full pallet crates, or 20ft/40ft ocean container loads.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Volume Discount Tier Matrix (UNIFORM PRIMARY COLOR on all 4 Tier Badges) -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Volume Economics</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Transparent Tiered Wholesale Margins</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Lower your per-unit landed costs with established tiered pricing schedules. Direct mill rates applied automatically.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Tier 1: Uniform Primary Clay Badge -->
+          <div class="p-6 rounded-xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">
+              Tier 1 &bull; Boutique Retail
+            </span>
+            <div>
+              <p class="text-3xl font-black text-[#944422] dark:text-[#d4973b]">15% OFF</p>
+              <p class="text-xs font-bold text-[#16191c] dark:text-white mt-1">50 to 250 Units</p>
+            </div>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ Mix &amp; match standard SKUs</li>
+              <li>✓ Courier air freight dispatch</li>
+              <li>✓ Retail-ready barcoded packaging</li>
+            </ul>
+          </div>
+
+          <!-- Tier 2: Uniform Primary Clay Badge -->
+          <div class="p-6 rounded-xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">
+              Tier 2 &bull; Commercial Hotel
+            </span>
+            <div>
+              <p class="text-3xl font-black text-[#944422] dark:text-[#d4973b]">25% OFF</p>
+              <p class="text-xs font-bold text-[#16191c] dark:text-white mt-1">251 to 1,000 Units</p>
+            </div>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ Custom screen-printed logos</li>
+              <li>✓ Palletized wooden crate packing</li>
+              <li>✓ LCL sea freight consolidation</li>
+            </ul>
+          </div>
+
+          <!-- Tier 3: Uniform Primary Clay Badge -->
+          <div class="p-6 rounded-xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">
+              Tier 3 &bull; Regional Chain
+            </span>
+            <div>
+              <p class="text-3xl font-black text-[#944422] dark:text-[#d4973b]">35% OFF</p>
+              <p class="text-xs font-bold text-[#16191c] dark:text-white mt-1">1,001 to 5,000 Units</p>
+            </div>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ Private label branding &amp; tags</li>
+              <li>✓ Custom size and edge binding</li>
+              <li>✓ Dedicated export freight coordinator</li>
+            </ul>
+          </div>
+
+          <!-- Tier 4: Uniform Primary Clay Badge -->
+          <div class="p-6 rounded-xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">
+              Tier 4 &bull; Full Container (FCL)
+            </span>
+            <div>
+              <p class="text-3xl font-black text-[#944422] dark:text-[#d4973b]">45% OFF</p>
+              <p class="text-xs font-bold text-[#16191c] dark:text-white mt-1">20ft / 40ft FCL Container</p>
+            </div>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ Maximum direct mill export rate</li>
+              <li>✓ FOB Cochin or CIF Port of Choice</li>
+              <li>✓ Phytosanitary &amp; SGS inspection</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Custom Wholesale Inquiry Form -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-2xl border-2 border-[#e6decb] dark:border-[#2a3138] bg-white dark:bg-[#1c2127] p-8 sm:p-12 shadow-xl space-y-8">
+          
+          <div class="text-center space-y-2 max-w-2xl mx-auto">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Wholesale Quotation Desk</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Submit Wholesale Inquiry</h2>
+            <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+              Fill out your volume requirements below. Our commercial desk will calculate FOB/CIF freight and deliver an official pro-forma invoice within 24 business hours.
+            </p>
+          </div>
+
+          <form class="needs-strict-validation space-y-6" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="space-y-1.5">
+                <label for="bulk-name" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Buyer Full Name <span class="text-rose-500">*</span>
+                </label>
+                <input type="text" id="bulk-name" name="name" required placeholder="e.g. Katherine Vance" class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bulk-email" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Business Email <span class="text-rose-500">*</span>
+                </label>
+                <input type="email" id="bulk-email" name="email" required placeholder="katherine@vancehotels.com" class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bulk-phone" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Phone / WhatsApp <span class="text-rose-500">*</span>
+                </label>
+                <input type="tel" id="bulk-phone" name="phone" required placeholder="+1 555-014-9988" class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bulk-company" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Company / Organization Name <span class="text-rose-500">*</span>
+                </label>
+                <input type="text" id="bulk-company" name="company" required placeholder="Vance Hospitality Group" class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bulk-category" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Product Category <span class="text-rose-500">*</span>
+                </label>
+                <select id="bulk-category" name="category" required class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+                  <option value="" disabled selected>Select Primary Category</option>
+                  <option value="mats">Tufted Coir Entrance Mats</option>
+                  <option value="rugs">Handwoven Golden Jute Area Rugs</option>
+                  <option value="bags">Biodegradable Jute Carry Bags</option>
+                  <option value="decor">Braided Storage Baskets &amp; Planters</option>
+                  <option value="geo">ASTM Civil Coir Geotextiles</option>
+                  <option value="mixed">Mixed Container (Multiple Categories)</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bulk-tier" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                  Target Order Volume <span class="text-rose-500">*</span>
+                </label>
+                <select id="bulk-tier" name="tier" required class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+                  <option value="" disabled selected>Select Target Volume</option>
+                  <option value="tier-1">Tier 1: 50 - 250 Units (15% OFF)</option>
+                  <option value="tier-2">Tier 2: 251 - 1,000 Units (25% OFF)</option>
+                  <option value="tier-3">Tier 3: 1,001 - 5,000 Units (35% OFF)</option>
+                  <option value="tier-4">Tier 4: Full 20ft / 40ft Container (45% OFF)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="bulk-notes" class="block text-xs font-bold text-[#16191c] dark:text-[#f2f4f8]">
+                Custom Printing, Seaport Destination &amp; Delivery Timeline <span class="text-rose-500">*</span>
+              </label>
+              <textarea id="bulk-notes" name="notes" rows="4" required placeholder="Specify your destination port, required custom stenciling or private label packaging details, and required delivery date..." class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#16191c] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]"></textarea>
+            </div>
+
+            <div class="form-feedback-area hidden p-4 sm:p-5 rounded-2xl text-xs font-bold my-4"></div>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <button type="submit" class="w-full sm:w-auto bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold uppercase tracking-wider px-8 py-3.5 rounded-lg shadow-sm transition-all">
+                Submit Wholesale RFQ
+              </button>
+              <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">
+                Official pro-forma invoice issued via email within 24 hours.
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Custom Stenciling, Screen Printing & Private Label Packaging -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl overflow-hidden border-2 border-[#e6decb] dark:border-[#2a3138] shadow-lg">
+              <img src="https://images.pexels.com/photos/1624291/pexels-photo-1624291.jpeg" alt="Custom screen printing and branding on natural coir mats" class="w-full h-80 sm:h-96 object-cover object-center" loading="lazy">
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Brand Personalization</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading leading-tight">Private Labeling &amp; Custom Artwork Application</h2>
+            <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8] leading-relaxed">
+              Elevate your retail merchandise with bespoke custom branding executed directly at our Kerala and Bengal facilities before packing.
+            </p>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-[#333d47] dark:text-[#cbd5e1] pt-2">
+              <li class="flex items-center gap-3">
+                <span class="w-5 h-5 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center font-bold text-xs">✓</span>
+                <span><strong>Multi-Color Screen Stenciling:</strong> Fade-resistant mineral inks for sharp entrance logos</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-5 h-5 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center font-bold text-xs">✓</span>
+                <span><strong>Recycled Craft Hangtags:</strong> Full-color FSC paper tags with custom barcodes and care guides</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-5 h-5 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center font-bold text-xs">✓</span>
+                <span><strong>Retail Display Outer Cartons:</strong> Heavy-duty corrugated display master shippers</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: International Shipping, Port Inspection & Incoterms -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Export Standards</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Global Shipping Terms &amp; Phytosanitary Compliance</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            We navigate international customs declarations, ocean bills of lading, and port clearance procedures for seamless arrival.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Incoterms 2020</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">FOB, CIF, CFR, &amp; DDP</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              We ship under standard international commercial terms from Cochin Port (South India) and Syama Prasad Mookerjee Port Kolkata (East India).
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Biosecurity</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">Phytosanitary &amp; Fumigation</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              All coir and jute consignments undergo mandatory methyl bromide or heat treatment with official government quarantine certificates for USA, EU, and Australia.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Third-Party Audit</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">SGS &amp; Bureau Veritas Inspection</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Buyers can nominate pre-shipment container inspections to independently verify GSM weights, tensile tests, moisture content, and piece counts.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Wholesale FAQs & Quality Assurance Guarantee -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Wholesale Clarity</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Frequently Asked Wholesale Questions</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Key information regarding minimum order quantities, payment terms, and container packing.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">What is your standard production lead time for full container orders?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Standard lead time for a 20ft or 40ft container is 18 to 24 business days from deposit receipt. For standard stock items, dispatch can occur within 7 business days.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">What international payment terms do you accept?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              We accept Irrevocable Confirmed Letters of Credit (L/C at sight) and Telegraphic Transfer (30% T/T advance deposit, 70% upon presentation of Ocean Bill of Lading copy).
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">Can we order physical fiber specimen packs before placing container orders?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Yes, our commercial team dispatches complete specimen boxes via DHL Express within 48 hours for verified business buyers. Specimen costs are credited back against your first volume order.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
+          </div>
+          <p class="text-xs text-[#94a3b8] leading-relaxed">
+            TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-[#d4973b] font-semibold">
+            <span>FSC Certified</span>
+            <span>&bull;</span>
+            <span>GOTS Organic</span>
+            <span>&bull;</span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home 1 (Consumer Retail)</a></li>
+            <li><a href="home-2.html" class="hover:text-white transition-colors">Home 2 (Civil &amp; Industrial)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Products Catalog &amp; Filter</a></li>
+            <li><a href="bulk-orders.html" class="hover:text-white transition-colors">Bulk &amp; Wholesale Procurement</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Coastal Mills</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Agronomy &amp; Fiber Journal</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Port Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
+          <ul class="space-y-2 text-xs text-[#94a3b8]">
+            <li>Heavy-Duty Coir Entrance Mats</li>
+            <li>Handwoven Natural Jute Area Rugs</li>
+            <li>Braided Golden Jute Storage Baskets</li>
+            <li>Biodegradable Market Carry Bags</li>
+            <li>ASTM D4595 Civil Coir Geotextiles</li>
+            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
+            <li>Organic Coconut Husk Plant Liners</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
+          <div class="text-xs space-y-2 text-[#94a3b8]">
+            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
+            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
+            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
+            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
+        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
+          <span>&bull;</span>
+          <span>Fair Trade Living Wages</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Toast Feedback -->
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">
+    <span id="toast-text">Action completed successfully.</span>
+  </div>
+
+  <!-- Global Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

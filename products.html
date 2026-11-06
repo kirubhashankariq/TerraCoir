@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalog | TerraCoir Artisanal Coir & Golden Jute Store</title>
+  <meta name="description" content="Browse our full collection of natural coir doormats, handwoven jute rugs, market bags, planters, and certified geotextiles with live category filtering.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fbeee8',
+              100: '#f7ddd1',
+              500: '#944422',
+              600: '#793417',
+              700: '#5e250f'
+            },
+            wheat: {
+              50: '#fcf8f0',
+              100: '#f7edda',
+              500: '#d4973b',
+              600: '#b87c26',
+              700: '#8c5916'
+            },
+            slate: {
+              850: '#1c2127',
+              900: '#16191c',
+              950: '#0f1114'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#faf9f6] dark:bg-[#111417] text-[#333d47] dark:text-[#e2e8f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#944422] selection:text-white w-full">
+  
+  <!-- Top Utility Bar: Deep Obsidian Slate (#16191c) -->
+  <div class="bg-[#16191c] text-[#cbd5e1] text-[11px] py-2 px-4 border-b border-[#2a3138] hidden md:block w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 truncate font-medium">
+        <span class="inline-flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-[#d4973b]"></span> FSC &amp; GOTS Certified Natural Coir &amp; Jute</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>100% Biodegradable &bull; Zero Microplastics</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>Direct Mill Hubs: Cochin &amp; Kolkata</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 font-medium">
+        <a href="tel:18005555883" class="hover:text-white transition-colors">Direct Desk: 1-800-555-COIR</a>
+        <span class="text-[#d4973b]">&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Port Logistics &amp; Showrooms</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Header (Fully Responsive from 320px to 1440px+) -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
+        
+        <!-- Brand Logo & Mark -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+              TERRA<span class="text-[#944422]">COIR</span>
+            </span>
+            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+              Natural Coir &amp; Golden Jute
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
+          
+      <div class="relative shrink-0 home-select-wrapper">
+        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
+        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
+          <option value="" selected disabled>Home Layouts &#x25BE;</option>
+          <option value="index.html">Home 1 (Consumer Retail)</option>
+          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
+        </select>
+      </div>
+          <a href="products.html" class="nav-link active-page">Products</a>
+          <a href="bulk-orders.html" class="nav-link ">Bulk Orders</a>
+          <a href="about.html" class="nav-link ">About Us</a>
+          <a href="blog.html" class="nav-link ">Blog</a>
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Desktop Header Utilities (xl: 1280px+) -->
+        <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="bulk-orders.html" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm transition-all hover:shadow whitespace-nowrap">
+            Bulk Quotation
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Controls (Active below 1280px: xl:hidden) -->
+        <div class="flex items-center gap-2 xl:hidden shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle RTL">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle Theme">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Open Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-in Modal) -->
+    <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-[#16191c]/80" aria-modal="true" role="dialog">
+      <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
+            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Home Select -->
+          <div class="space-y-1.5">
+            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
+            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
+              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Nav Links -->
+          <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+            <a href="products.html" class="mobile-nav-link active-page">Products</a>
+        <a href="bulk-orders.html" class="mobile-nav-link ">Bulk Orders</a>
+        <a href="about.html" class="mobile-nav-link ">About Us</a>
+        <a href="blog.html" class="mobile-nav-link ">Blog</a>
+        <a href="contact.html" class="mobile-nav-link ">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-[#e6decb] dark:border-[#2a3138] space-y-3">
+          <a href="bulk-orders.html" class="block w-full py-2.5 px-4 text-center bg-[#944422] text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-sm">
+            Wholesale Order Desk
+          </a>
+          <p class="text-[11px] text-[#6b7280] dark:text-[#94a3b8] text-center">
+            Toll-Free Direct: 1-800-555-COIR
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full">
+
+    <!-- Section 1: Hero Banner with Raw Background Image (Zero Overlays, Zero Opacity) -->
+    <section class="relative min-h-[380px] sm:min-h-[440px] flex items-center justify-center hero-raw-bg border-b border-[#e6decb] dark:border-[#2a3138]" style="background-image: url('https://images.pexels.com/photos/28446689/pexels-photo-28446689.jpeg');">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full flex flex-col items-center justify-center text-center">
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#16191c]/90 text-[#d4973b] text-xs font-bold uppercase tracking-wider border border-[#d4973b]/40 shadow-lg mx-auto">
+            <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+            Direct Artisan &amp; Mill Catalog
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black hero-heavy-shadow text-white text-center">
+            Artisanal Coir &amp; Golden Jute Catalog
+          </h1>
+          <p class="text-sm sm:text-base lg:text-lg text-white hero-subtext-shadow leading-relaxed font-semibold max-w-2xl mx-auto text-center">
+            Explore our complete collection of natural coconut husk entrance mats, handwoven jute area rugs, organic market tote bags, botanical planters, and certified civil geotextiles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive Filter Toolbar -->
+    <section class="py-6 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138] sticky top-16 sm:top-20 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <div class="flex flex-wrap items-center gap-2 w-full md:w-auto" id="category-filters">
+            <button type="button" class="filter-btn active-filter px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white transition-colors" data-filter="all">
+              All Products (12)
+            </button>
+            <button type="button" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fbeee8] dark:bg-[#251e1a] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#944422] hover:text-white transition-colors" data-filter="mats">
+              Mats &amp; Rugs
+            </button>
+            <button type="button" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fbeee8] dark:bg-[#251e1a] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#944422] hover:text-white transition-colors" data-filter="bags">
+              Handwoven Bags
+            </button>
+            <button type="button" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fbeee8] dark:bg-[#251e1a] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#944422] hover:text-white transition-colors" data-filter="decor">
+              Eco Decor &amp; Planters
+            </button>
+            <button type="button" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fbeee8] dark:bg-[#251e1a] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#944422] hover:text-white transition-colors" data-filter="geo">
+              Civil Geotextiles
+            </button>
+          </div>
+
+          <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+            <div class="relative flex-grow md:w-60">
+              <input type="text" id="product-search" placeholder="Search catalog..." class="w-full text-xs p-2 pl-8 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-[#16191c] dark:text-white focus:outline-none focus:ring-1 focus:ring-[#944422]">
+              <svg class="w-4 h-4 text-[#94a3b8] absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <select id="product-sort" class="text-xs p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-[#16191c] dark:text-white focus:outline-none">
+              <option value="featured">Featured First</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Dynamic Product Specimen Grid (12 Items) -->
+    <section class="py-12 sm:py-16 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Product 1 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="mats" data-price="32.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/ejhrhKbBqtQGligM1VH1xL3aP0rFDPM9AWY4NeCyTcU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFXWFVoMTlzMkwu/anBn" alt="Tufted Coir Heavy Entrance Mat" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Coir Bristle</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$32.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-MAT-01</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Heavy-Duty Tufted Coir Entrance Mat</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Deep 38mm coconut husk bristle pile that scrapes heavy mud and debris. Bonded with natural vulcanized tree latex.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Dimensions:</strong> 45 x 75 cm &bull; <strong>Pile:</strong> 38 mm</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-MAT-01" data-name="Heavy-Duty Tufted Coir Entrance Mat" data-price="$32.00" data-specs="Dense 38mm bristle pile, natural latex backing, 45x75cm standard door size." data-img="https://imgs.search.brave.com/ejhrhKbBqtQGligM1VH1xL3aP0rFDPM9AWY4NeCyTcU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFXWFVoMTlzMkwu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="mats" data-price="145.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/Sy2vb90n2zGhG5x1l-U8wABs_FdDnJonm6DpJ-pIapM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/QTF3MmN5SGRoK0wu/anBn" alt="Geometric Diamond Handwoven Jute Rug" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Golden Jute</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$145.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-RUG-02</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Geometric Diamond Handwoven Jute Rug</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Double-sided reversible flatweave rug woven from lustrous golden Bengal jute with natural unbleached ivory flax yarn.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Dimensions:</strong> 150 x 240 cm &bull; <strong>Weave:</strong> Reversible Diamond</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-RUG-02" data-name="Geometric Diamond Handwoven Jute Rug" data-price="$145.00" data-specs="Double-sided flatweave, golden Bengal jute, ivory accents, 150x240cm." data-img="https://imgs.search.brave.com/Sy2vb90n2zGhG5x1l-U8wABs_FdDnJonm6DpJ-pIapM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/QTF3MmN5SGRoK0wu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="bags" data-price="28.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/FCCZO2-SeB0_XBdIOlWBZQUgEmv_A0BeEgkheri3dmg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFkSkFvbWxjQ0wu/anBn" alt="Handspun Golden Jute Market Tote" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Pure Jute</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$28.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-BAG-03</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Handspun Golden Jute Market Tote</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Reinforced braided rope handles, gusseted base, and unbleached cotton lining for zero-plastic grocery shopping.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Volume:</strong> 25 Liters &bull; <strong>Handles:</strong> 3-ply Braided Jute</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-BAG-03" data-name="Handspun Golden Jute Market Tote" data-price="$28.00" data-specs="Reinforced braided rope handles, structured base, chemical-free linen lining." data-img="https://imgs.search.brave.com/FCCZO2-SeB0_XBdIOlWBZQUgEmv_A0BeEgkheri3dmg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFkSkFvbWxjQ0wu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="decor" data-price="54.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/NDr6Jg6wSZsoRmIjhjquv2NUDU8WR9oe4XKCMfXpVok/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFHOEM1UzFBMkwu/anBn" alt="Braided Coir & Jute Storage Baskets" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Coir &amp; Jute</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$54.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-BSK-04</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Braided Coir &amp; Jute Storage Baskets (Set of 2)</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Sturdy coil-woven nesting baskets designed for living room throws, nursery toys, or bathroom linen organizers.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Diameters:</strong> 35cm &amp; 30cm &bull; <strong>Set:</strong> 2 Nesting Units</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-BSK-04" data-name="Braided Coir &amp; Jute Storage Baskets" data-price="$54.00" data-specs="Set of 2 nesting baskets, coiled coir core with fine jute wrap." data-img="https://imgs.search.brave.com/NDr6Jg6wSZsoRmIjhjquv2NUDU8WR9oe4XKCMfXpVok/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFHOEM1UzFBMkwu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="decor" data-price="22.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/5R3N5HVXdvtFkTphIRHtFZQjEm4lK1DJMRH8Err8VZA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFQQnNkY0h1aEwu/anBn" alt="Botanical Coir Hanging Plant Cradle" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Coconut Coir</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$22.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-PLN-05</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Botanical Coir Hanging Plant Cradle</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Molded needle-punched coconut fiber liner with 4-strand twisted coconut cord hanger for indoor pothos and ferns.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Diameter:</strong> 25 cm &bull; <strong>Drop Length:</strong> 90 cm</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-PLN-05" data-name="Botanical Coir Hanging Plant Cradle" data-price="$22.00" data-specs="Needle-punched coir liner with heavy-duty cord, 25cm dia, 90cm drop." data-img="https://imgs.search.brave.com/5R3N5HVXdvtFkTphIRHtFZQjEm4lK1DJMRH8Err8VZA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFQQnNkY0h1aEwu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="mats" data-price="98.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/MYyE63C364pkhr7JheNv9gO99GO4hCeiEghurOEqHuo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFxTGhELVFPR0wu/anBn" alt="Herringbone Bleached Jute Hallway Runner" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Bleached Jute</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$98.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-RUN-06</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Herringbone Bleached Jute Hallway Runner</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Sun-bleached natural jute woven in a heavy herringbone twill with hand-stitched organic cotton binding.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Dimensions:</strong> 80 x 300 cm &bull; <strong>Density:</strong> 2200 GSM</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-RUN-06" data-name="Herringbone Bleached Jute Hallway Runner" data-price="$98.00" data-specs="Sun-bleached jute, herringbone twill weave, 80x300cm corridor size." data-img="https://imgs.search.brave.com/MYyE63C364pkhr7JheNv9gO99GO4hCeiEghurOEqHuo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFxTGhELVFPR0wu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="geo" data-price="85.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/9HbanMM-D0WpL6COX8krqN_QW-XitgcRg1S-bTbjkMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TRUxMRVIvRGVm/YXVsdC8yMDI2LzEv/NTc2Nzk5Njk3L1VK/L1pJL05OLzExODky/Mjk3LzkwMC1nc20t/Y29pci1nZW90ZXh0/aWxlLW1hdC0xMDAw/eDEwMDAuanBn" alt="TerraCoir Geo-Mesh 700 GSM Roll" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Geotextile</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$85.00/Roll</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-GEO-700</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">Export Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">TerraCoir Geo-Mesh 700 (100 m&sup2; Roll)</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Woven coconut coir netting for highway cuts and riverbanks. ASTM D4595 tensile rated at 21 kN/m.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Roll:</strong> 2m W x 50m L &bull; <strong>Mesh:</strong> 20 x 20 mm</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-GEO-700" data-name="TerraCoir Geo-Mesh 700 (100 sqm Roll)" data-price="$85.00/Roll" data-specs="2x50m roll, 20x20mm mesh, ASTM D4595 certified 21 kN/m tensile." data-img="https://imgs.search.brave.com/9HbanMM-D0WpL6COX8krqN_QW-XitgcRg1S-bTbjkMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TRUxMRVIvRGVm/YXVsdC8yMDI2LzEv/NTc2Nzk5Njk3L1VK/L1pJL05OLzExODky/Mjk3LzkwMC1nc20t/Y29pci1nZW90ZXh0/aWxlLW1hdC0xMDAw/eDEwMDAuanBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="geo" data-price="42.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/EspI7kqO316_XptyxjLplu4O4bf49c1jfDSsJgTki4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmFs/aWNkbi5jb20vQHNj/MDQva2YvQTA2NmMy/Y2MzMGU0MzRlNDZh/ZTI4MTFmZTRiYWMx/YjU3bS5qcGdfMzAw/eDMwMC5qcGc" alt="VOT Spun Hydrocarbon-Free Coffee Burlap Sack" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Burlap Sacking</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$4.20/pc</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-JUT-COF</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">Export Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">VOT Food-Grade Jute Coffee Sacks (60kg)</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Vegetable oil processed burlap sacks with zero mineral hydrocarbon residue. IJSG certified for specialty coffee beans.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Size:</strong> 71 x 102 cm &bull; <strong>Capacity:</strong> 60 kg Green Beans</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-JUT-COF" data-name="VOT Food-Grade Jute Coffee Sacks (60kg)" data-price="$4.20/pc" data-specs="Vegetable oil treated, 71x102cm, 300 GSM, 60kg green coffee capacity." data-img="https://imgs.search.brave.com/EspI7kqO316_XptyxjLplu4O4bf49c1jfDSsJgTki4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmFs/aWNkbi5jb20vQHNj/MDQva2YvQTA2NmMy/Y2MzMGU0MzRlNDZh/ZTI4MTFmZTRiYWMx/YjU3bS5qcGdfMzAw/eDMwMC5qcGc">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="mats" data-price="48.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/PBVNLlBpVKPgDpsj6HV0lbsgPdykYrUMeeOoSwz-Xtw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzkxLWRQNDlOSUxM/LmpwZw" alt="Double Border Bleached Coir Welcome Mat" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Coir Bristle</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$48.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-MAT-09</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Double Charcoal Border Coir Estate Mat</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Oversized entrance mat featuring mineral pigment charcoal border framing natural golden coconut bristles.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Dimensions:</strong> 60 x 90 cm &bull; <strong>Backing:</strong> Natural Latex</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-MAT-09" data-name="Double Charcoal Border Coir Estate Mat" data-price="$48.00" data-specs="Oversized 60x90cm estate mat, charcoal mineral pigment double border." data-img="https://imgs.search.brave.com/PBVNLlBpVKPgDpsj6HV0lbsgPdykYrUMeeOoSwz-Xtw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzkxLWRQNDlOSUxM/LmpwZw">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="decor" data-price="38.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/73v-mnRyDXO6mYllkJwGroqAysTF8D3i2dPnvFAMSLc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFteEYzTm1DNUwu/anBn" alt="Braided Jute Table Runner & Placemat Set" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Dining Decor</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$38.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-TAB-10</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Braided Jute Dining Table Runner &amp; Mats</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Heat-resistant circular woven table runner with 4 matching circular chargers crafted from natural golden jute cord.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Runner:</strong> 35 x 120 cm &bull; <strong>Placemats:</strong> 38 cm Dia (4 Pcs)</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-TAB-10" data-name="Braided Jute Dining Table Runner & Mats" data-price="$38.00" data-specs="35x120cm runner + 4x 38cm circular placemats, heat-resistant golden cord." data-img="https://imgs.search.brave.com/73v-mnRyDXO6mYllkJwGroqAysTF8D3i2dPnvFAMSLc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFteEYzTm1DNUwu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="bags" data-price="18.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/OCYBzkxsYxLA_yoaSOEthHHZYjEgbr9Myw42H8sLf2Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTEwcWZnTW12WEwu/anBn" alt="Minimalist Jute Wine & Bottle Carrier" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Jute Gift Bag</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$18.00</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-BAG-11</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">In Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Dual-Bottle Artisanal Jute Wine Carrier</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Padded internal fiber partition, cane loop handle, and natural wood toggle closure designed for eco-gift packaging.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Capacity:</strong> 2 Standard 750ml Wine Bottles</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-BAG-11" data-name="Dual-Bottle Artisanal Jute Wine Carrier" data-price="$18.00" data-specs="Dual 750ml wine bottle capacity, padded internal jute divider, cane handle." data-img="https://imgs.search.brave.com/OCYBzkxsYxLA_yoaSOEthHHZYjEgbr9Myw42H8sLf2Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTEwcWZnTW12WEwu/anBn">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="product-item specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden group" data-category="geo" data-price="65.00">
+            <div class="relative h-60 overflow-hidden bg-stone-100 dark:bg-stone-800">
+              <img src="https://imgs.search.brave.com/yZQk-L-xlPwbnWST4A6K4Yce8JWjbr4MofQlzyFpnMY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Nv/aGl0ZWNoLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/NC96NTUzODA0MTE5/NzE2OV9lYzQxYmVj/YmYxZTJiYTRkZTRl/NzgyYjcyZjdiYTlm/ZC04MDB4ODAwLndl/YnA" alt="Needle Punched Coconut Husk Mulch Roll" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3 left-3 badge-clay">Agri Mulch</span>
+              <span class="absolute top-3 right-3 text-xs font-bold bg-[#16191c]/80 text-white px-2 py-0.5 rounded-full">$65.00/Roll</span>
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#64748b] dark:text-[#94a3b8]">SKU: TC-MUL-12</span>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">Export Stock</span>
+              </div>
+              <div class="card-title-fixed">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Needle-Punched Coir Weed Blanket Roll</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  1200 GSM thick organic coconut fiber matting for orchards and landscape borders. Replaces plastic weed fabric.
+                </p>
+              </div>
+              <div class="card-specs-fixed py-2 border-t border-b border-[#e6decb] dark:border-[#2a3138] my-3 text-[11px] text-[#4b5563] dark:text-[#cbd5e1]">
+                <span><strong>Roll Dimension:</strong> 1m W x 25m L &bull; <strong>Density:</strong> 1200 GSM</span>
+              </div>
+              <div class="specimen-card-footer pt-2 flex items-center gap-2">
+                <button type="button" class="btn-quick-view flex-1 py-2 px-3 text-center text-xs font-bold bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] rounded-lg hover:bg-[#944422] hover:text-white transition-colors" data-id="TC-MUL-12" data-name="Needle-Punched Coir Weed Blanket Roll" data-price="$65.00/Roll" data-specs="1x25m roll, 1200 GSM density, 100% biodegradable coconut weed barrier." data-img="https://imgs.search.brave.com/yZQk-L-xlPwbnWST4A6K4Yce8JWjbr4MofQlzyFpnMY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Nv/aGl0ZWNoLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/NC96NTUzODA0MTE5/NzE2OV9lYzQxYmVj/YmYxZTJiYTRkZTRl/NzgyYjcyZjdiYTlm/ZC04MDB4ODAwLndl/YnA">
+                  Quick View
+                </button>
+                <a href="bulk-orders.html" class="py-2 px-3 text-center text-xs font-bold border border-[#e6decb] dark:border-[#2a3138] rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                  Bulk RFQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Empty State -->
+          <div id="product-empty-state" class="hidden text-center py-16 space-y-4 col-span-full w-full">
+            <div class="w-14 h-14 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center mx-auto shadow-sm">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-lg font-extrabold text-[#16191c] dark:text-white">No products found matching your criteria</h4>
+              <p class="text-xs text-[#64748b] dark:text-[#94a3b8]">Try selecting a different category or clearing your search term.</p>
+            </div>
+            <button type="button" class="reset-catalog-btn px-5 py-2.5 rounded-full bg-[#944422] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#793417] shadow-sm transition-all cursor-pointer">
+              View All 12 Products
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Custom Dimension & Private Label Weaving Capabilities -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Private Label &amp; Custom Sizing</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading leading-tight">Custom Mill Weaving for Commercial Brands</h2>
+            <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8] leading-relaxed">
+              We offer bespoke manufacturing runs for retail brands, boutique hotels, and corporate gifting. From custom screen-printed coir mats to custom-dyed jute area rug borders, our looms accommodate non-standard architectural dimensions.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-2 text-xs">
+              <div class="p-4 rounded-lg bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138]">
+                <h4 class="font-bold text-[#16191c] dark:text-white mb-1">Custom Roll Widths</h4>
+                <p class="text-[#64748b] dark:text-[#94a3b8]">Continuous coir and jute rolls available from 0.5m up to 4.0m widths.</p>
+              </div>
+              <div class="p-4 rounded-lg bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138]">
+                <h4 class="font-bold text-[#16191c] dark:text-white mb-1">Screen Stenciling</h4>
+                <p class="text-[#64748b] dark:text-[#94a3b8]">Eco-friendly UV-stable mineral inks for durable entrance logos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl overflow-hidden border-2 border-[#e6decb] dark:border-[#2a3138] shadow-lg">
+              <img src="https://imgs.search.brave.com/AMempzbPrEBneChhp3R4ZVe1t200sUTkhjSsNjvMn1A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzIyLzI0LzczLzE4/LzM2MF9GXzIyMjQ3/MzE4NjhfS1BYR215/RTJCc2k3cjMwaW5o/N2hQODZhQ2ZDWU45/UHcuanBn" alt="Modern living space with custom-sized jute rug" class="w-full h-80 sm:h-96 object-cover object-center" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Fiber Comparison Guide -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Fiber Science</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Choosing the Right Botanical Fiber For Your Project</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Understand the mechanical differences between Coir Bristle, Decorticated Golden Jute, and Natural Flax blends.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="badge-clay">High Stiffness</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">Coconut Husk Coir</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Extracted from outer coconut shells. Extremely high lignin content makes it water-resistant, rot-resistant, and rigid. Ideal for door scraping and outdoor civil erosion nets.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="badge-clay">Soft &amp; Lustrous</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">Golden Bengal Jute</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Harvested from bast stem fibers. Highly pliable with a soft underfoot feel and a natural golden sheen. Best suited for interior rugs, market bags, and breathable agricultural sacks.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
+            <span class="badge-clay">Hybrid Blend</span>
+            <h3 class="text-base font-bold text-[#16191c] dark:text-white">Coir &amp; Jute Blends</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Combines the structural rigidity of a coir fiber core with the smooth, tactile exterior of spun jute cord. Used in heavy-duty nesting baskets and hallway runners.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Product Care & Longevity FAQs -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Care Protocols</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Care &amp; Maintenance for Botanical Fiber Goods</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Simple steps to maintain the beauty and durability of your natural coir mats and jute rugs for years.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">How should I clean my natural coir doormat?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Simply lift the mat and shake it vigorously outside to dislodge collected dirt. You can also vacuum using the suction-only brush attachment. Avoid soaking in standing water to preserve the natural latex backing.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">How do I handle accidental liquid spills on my jute area rug?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Blot immediately with a clean dry towel. Do not rub, as friction may push the liquid deeper into the plant fibers. For light stains, dab gently with a cloth lightly dampened with cold water and mild dish soap, then dry thoroughly with a fan.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">Will natural fibers shed when first purchased?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Some loose bristle fiber shedding is completely normal during the first 2-3 weeks of use. This is loose natural fiber trimming and will naturally subside after regular sweeping or light vacuuming.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
+          </div>
+          <p class="text-xs text-[#94a3b8] leading-relaxed">
+            TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-[#d4973b] font-semibold">
+            <span>FSC Certified</span>
+            <span>&bull;</span>
+            <span>GOTS Organic</span>
+            <span>&bull;</span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home 1 (Consumer Retail)</a></li>
+            <li><a href="home-2.html" class="hover:text-white transition-colors">Home 2 (Civil &amp; Industrial)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Products Catalog &amp; Filter</a></li>
+            <li><a href="bulk-orders.html" class="hover:text-white transition-colors">Bulk &amp; Wholesale Procurement</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Coastal Mills</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Agronomy &amp; Fiber Journal</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Port Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
+          <ul class="space-y-2 text-xs text-[#94a3b8]">
+            <li>Heavy-Duty Coir Entrance Mats</li>
+            <li>Handwoven Natural Jute Area Rugs</li>
+            <li>Braided Golden Jute Storage Baskets</li>
+            <li>Biodegradable Market Carry Bags</li>
+            <li>ASTM D4595 Civil Coir Geotextiles</li>
+            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
+            <li>Organic Coconut Husk Plant Liners</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
+          <div class="text-xs space-y-2 text-[#94a3b8]">
+            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
+            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
+            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
+            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
+        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
+          <span>&bull;</span>
+          <span>Fair Trade Living Wages</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Toast Feedback -->
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">
+    <span id="toast-text">Action completed successfully.</span>
+  </div>
+
+  <!-- Global Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

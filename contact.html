@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Port Logistics | TerraCoir Coir & Jute Store</title>
+  <meta name="description" content="Connect with TerraCoir export specialists, visit our coastal showrooms in Cochin and Kolkata, view interactive Google Maps, or submit a custom project inquiry.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fbeee8',
+              100: '#f7ddd1',
+              500: '#944422',
+              600: '#793417',
+              700: '#5e250f'
+            },
+            wheat: {
+              50: '#fcf8f0',
+              100: '#f7edda',
+              500: '#d4973b',
+              600: '#b87c26',
+              700: '#8c5916'
+            },
+            slate: {
+              850: '#1c2127',
+              900: '#16191c',
+              950: '#0f1114'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#faf9f6] dark:bg-[#111417] text-[#333d47] dark:text-[#e2e8f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#944422] selection:text-white w-full">
+  
+  <!-- Top Utility Bar: Deep Obsidian Slate (#16191c) -->
+  <div class="bg-[#16191c] text-[#cbd5e1] text-[11px] py-2 px-4 border-b border-[#2a3138] hidden md:block w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 truncate font-medium">
+        <span class="inline-flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-[#d4973b]"></span> FSC &amp; GOTS Certified Natural Coir &amp; Jute</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>100% Biodegradable &bull; Zero Microplastics</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>Direct Mill Hubs: Cochin &amp; Kolkata</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 font-medium">
+        <a href="tel:18005555883" class="hover:text-white transition-colors">Direct Desk: 1-800-555-COIR</a>
+        <span class="text-[#d4973b]">&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Port Logistics &amp; Showrooms</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Header (Fully Responsive from 320px to 1440px+) -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
+        
+        <!-- Brand Logo & Mark -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+              TERRA<span class="text-[#944422]">COIR</span>
+            </span>
+            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+              Natural Coir &amp; Golden Jute
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
+          
+      <div class="relative shrink-0 home-select-wrapper">
+        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
+        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
+          <option value="" selected disabled>Home Layouts &#x25BE;</option>
+          <option value="index.html">Home 1 (Consumer Retail)</option>
+          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
+        </select>
+      </div>
+          <a href="products.html" class="nav-link ">Products</a>
+          <a href="bulk-orders.html" class="nav-link ">Bulk Orders</a>
+          <a href="about.html" class="nav-link ">About Us</a>
+          <a href="blog.html" class="nav-link ">Blog</a>
+          <a href="contact.html" class="nav-link active-page">Contact</a>
+        </nav>
+
+        <!-- Desktop Header Utilities (xl: 1280px+) -->
+        <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="bulk-orders.html" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm transition-all hover:shadow whitespace-nowrap">
+            Bulk Quotation
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Controls (Active below 1280px: xl:hidden) -->
+        <div class="flex items-center gap-2 xl:hidden shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle RTL">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle Theme">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Open Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-in Modal) -->
+    <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-[#16191c]/80" aria-modal="true" role="dialog">
+      <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
+            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Home Select -->
+          <div class="space-y-1.5">
+            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
+            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
+              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Nav Links -->
+          <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+            <a href="products.html" class="mobile-nav-link ">Products</a>
+        <a href="bulk-orders.html" class="mobile-nav-link ">Bulk Orders</a>
+        <a href="about.html" class="mobile-nav-link ">About Us</a>
+        <a href="blog.html" class="mobile-nav-link ">Blog</a>
+        <a href="contact.html" class="mobile-nav-link active-page">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-[#e6decb] dark:border-[#2a3138] space-y-3">
+          <a href="bulk-orders.html" class="block w-full py-2.5 px-4 text-center bg-[#944422] text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-sm">
+            Wholesale Order Desk
+          </a>
+          <p class="text-[11px] text-[#6b7280] dark:text-[#94a3b8] text-center">
+            Toll-Free Direct: 1-800-555-COIR
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full">
+
+    <!-- Section 1: Hero Banner with Raw Background Image (Zero Overlays, Zero Opacity) -->
+    <section class="relative min-h-[380px] sm:min-h-[440px] flex items-center justify-center hero-raw-bg border-b border-[#e6decb] dark:border-[#2a3138]" style="background-image: url('https://images.pexels.com/photos/36619594/pexels-photo-36619594.jpeg');">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full flex flex-col items-center justify-center text-center">
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#16191c]/90 text-[#d4973b] text-xs font-bold uppercase tracking-wider border border-[#d4973b]/40 shadow-lg mx-auto">
+            <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+            Direct Trade &amp; Showroom Desks
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black hero-heavy-shadow text-white text-center">
+            Get in Touch With Our Fiber Specialists
+          </h1>
+          <p class="text-sm sm:text-base lg:text-lg text-white hero-subtext-shadow leading-relaxed font-semibold max-w-2xl mx-auto text-center">
+            Whether you are seeking physical material specimen boxes, custom dimension quotes, or ocean container freight calculations, our specialists are ready to assist.
+          </p>
+
+          <!-- Fast Contact Pills (Centered) -->
+          <div class="flex flex-wrap items-center justify-center gap-4 pt-4 text-xs font-bold">
+            <a href="tel:18005555883" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#16191c]/90 border border-[#d4973b]/50 text-white shadow-xl hover:border-[#d4973b] transition-all hover:scale-105">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              Direct Desk: 1-800-555-COIR
+            </a>
+            <a href="mailto:dispatch@terracoir-goods.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#16191c]/90 border border-[#d4973b]/50 text-white shadow-xl hover:border-[#d4973b] transition-all hover:scale-105">
+              <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+              dispatch@terracoir-goods.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Dual Coastal Showrooms & Export Offices -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Physical Locations</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Our Coastal Export Centers &amp; Material Showrooms</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Visit our operational hubs to inspect material specimens, compare bristle densities, and discuss high-volume logistics.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Hub 1: Cochin, Kerala -->
+          <div class="p-8 rounded-2xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-6">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">Cochin Harbor Hub</span>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">● Open 8:00 AM - 6:00 PM IST</span>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-[#16191c] dark:text-white">Coconut Coir Mill &amp; Export Showroom</h3>
+              <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8]">
+                Wharf 4B, Mattancherry Marine Corridor, Cochin Port Trust, Kochi, Kerala 682001, India.
+              </p>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Telephone Direct:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">+91 484 266 8411</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Custom Mat Fabrication:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">kerala.mats@terracoir-goods.com</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Port Loading Berth:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">Vallarpadam ICTT Container Terminal</span>
+              </div>
+            </div>
+
+            <a href="#inquiry-form-section" class="inline-block w-full py-2.5 text-center text-xs font-bold rounded-lg border border-[#944422] text-[#944422] dark:text-[#d4973b] hover:bg-[#944422] hover:text-white transition-colors">
+              Schedule Cochin Showroom Visit
+            </a>
+          </div>
+
+          <!-- Hub 2: Kolkata, West Bengal -->
+          <div class="p-8 rounded-2xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-6">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#944422] text-white">Kolkata Delta Hub</span>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">● Open 8:30 AM - 6:30 PM IST</span>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-[#16191c] dark:text-white">Golden Jute Spindles &amp; Textile Design Lab</h3>
+              <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8]">
+                Budge Budge Trunk Road, Hooghly Industrial Reach, Kolkata, West Bengal 700137, India.
+              </p>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Telephone Direct:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">+91 33 2490 1920</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Jute Burlap &amp; Bagging:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">kolkata.jute@terracoir-goods.com</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#64748b] dark:text-[#94a3b8]">Dock Clearance:</span>
+                <span class="font-bold text-[#16191c] dark:text-white">Netaji Subhas Docks (Kolkata Port)</span>
+              </div>
+            </div>
+
+            <a href="#inquiry-form-section" class="inline-block w-full py-2.5 text-center text-xs font-bold rounded-lg border border-[#944422] text-[#944422] dark:text-[#d4973b] hover:bg-[#944422] hover:text-white transition-colors">
+              Schedule Kolkata Design Visit
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Direct Inquiry Form (Strict Real-Time Validation) -->
+    <section id="inquiry-form-section" class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-2xl border-2 border-[#e6decb] dark:border-[#2a3138] bg-white dark:bg-[#1c2127] p-8 sm:p-12 shadow-xl space-y-8">
+          
+          <div class="text-center space-y-2 max-w-2xl mx-auto">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Direct Communication</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Send Us an Inquiry</h2>
+            <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+              Have questions about minimum order volumes, material specs, or custom branding? We respond within one business day.
+            </p>
+          </div>
+
+          <!-- Strict Real-Time Form Validation -->
+          <form class="needs-strict-validation space-y-6" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <!-- Full Name (Strict Alphabetic Validation: No Numbers Allowed) -->
+              <div class="space-y-1.5">
+                <label for="contact-name" class="block text-xs font-bold uppercase tracking-wider text-[#16191c] dark:text-white">
+                  Full Name <span class="text-[#944422]">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="fullName" 
+                  required 
+                  minlength="3" 
+                  pattern="^[A-Za-z\s\.\-\']+$"
+                  placeholder="e.g. Eleanor Vance" 
+                  class="w-full px-4 py-2.5 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-xs text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422] transition-colors"
+                >
+                <span class="validation-message hidden text-[11px] text-red-600 font-medium">Please enter a valid legal name (alphabetic letters only, min 3 characters).</span>
+              </div>
+
+              <!-- Corporate Email -->
+              <div class="space-y-1.5">
+                <label for="contact-email" class="block text-xs font-bold uppercase tracking-wider text-[#16191c] dark:text-white">
+                  Email Address <span class="text-[#944422]">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  required 
+                  placeholder="e.g. procurement@naturaldecor.com" 
+                  class="w-full px-4 py-2.5 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-xs text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422] transition-colors"
+                >
+                <span class="validation-message hidden text-[11px] text-red-600 font-medium">Please enter a valid email address with @ and domain name.</span>
+              </div>
+
+              <!-- Contact Phone Number -->
+              <div class="space-y-1.5">
+                <label for="contact-phone" class="block text-xs font-bold uppercase tracking-wider text-[#16191c] dark:text-white">
+                  Phone Number <span class="text-[#944422]">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  name="phone" 
+                  required 
+                  pattern="^[0-9\+\-\s\(\)]{8,20}$"
+                  placeholder="e.g. +1 (555) 234-5678" 
+                  class="w-full px-4 py-2.5 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-xs text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422] transition-colors"
+                >
+                <span class="validation-message hidden text-[11px] text-red-600 font-medium">Please enter a valid contact telephone number (8 to 20 digits).</span>
+              </div>
+
+              <!-- Department / Subject Area -->
+              <div class="space-y-1.5">
+                <label for="contact-department" class="block text-xs font-bold uppercase tracking-wider text-[#16191c] dark:text-white">
+                  Inquiry Department <span class="text-[#944422]">*</span>
+                </label>
+                <select 
+                  id="contact-department" 
+                  name="department" 
+                  required 
+                  class="w-full px-4 py-2.5 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-xs text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer"
+                >
+                  <option value="" disabled selected>Select Inquiry Category</option>
+                  <option value="consumer-goods">Retail Mats, Baskets &amp; Jute Home Decor</option>
+                  <option value="commercial-bulk">Commercial Wholesale &amp; Custom Sizing (500+ units)</option>
+                  <option value="civil-engineering">Civil Geotextiles &amp; Hydro-Seeding Coir Mesh</option>
+                  <option value="horticulture">Horticulture Coco Peat Blocks &amp; Plant Liners</option>
+                  <option value="press-factory">Factory Visit / Showroom Appointment</option>
+                </select>
+                <span class="validation-message hidden text-[11px] text-red-600 font-medium">Please select an inquiry category.</span>
+              </div>
+
+            </div>
+
+            <!-- Message Field -->
+            <div class="space-y-1.5">
+              <label for="contact-message" class="block text-xs font-bold uppercase tracking-wider text-[#16191c] dark:text-white">
+                Project Details or Material Inquiries <span class="text-[#944422]">*</span>
+              </label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                rows="4" 
+                required 
+                minlength="15" 
+                placeholder="Include estimated quantities, project delivery target, or specific ASTM specifications..." 
+                class="w-full px-4 py-2.5 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-xs text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422] transition-colors"
+              ></textarea>
+              <span class="validation-message hidden text-[11px] text-red-600 font-medium">Please provide at least 15 characters of detail regarding your project.</span>
+            </div>
+
+            <!-- Agreement Checkbox -->
+            <div class="flex items-start gap-3">
+              <input 
+                type="checkbox" 
+                id="contact-consent" 
+                name="consent" 
+                required 
+                class="mt-1 w-4 h-4 rounded border-[#e6decb] text-[#944422] focus:ring-[#944422]"
+              >
+              <label for="contact-consent" class="text-xs text-[#64748b] dark:text-[#94a3b8]">
+                I agree to the processing of my business contact data in accordance with TerraCoir's export compliance policies.
+              </label>
+            </div>
+
+            <!-- Submit Button & Feedback Area -->
+            <div class="pt-2">
+              <button 
+                type="submit" 
+                class="w-full sm:w-auto px-8 py-3 bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold rounded-lg shadow-md hover:shadow-lg transition-all"
+              >
+                Transmit Official Message
+              </button>
+            </div>
+
+            <div class="form-feedback-area hidden p-4 rounded-xl text-xs font-bold"></div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Cochin Harbor Mill Location (Real Google Maps Embed) -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Harbor Navigation</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Locate Our Cochin Harbor Facility</h2>
+          </div>
+          <span class="text-xs text-[#64748b] dark:text-[#94a3b8]">Coordinates: 9.9674&deg; N, 76.2427&deg; E &bull; Mattancherry Wharf</span>
+        </div>
+
+        <!-- Real Google Maps Iframe Container (Responsive 16:9 or 21:9) -->
+        <div class="w-full h-80 sm:h-96 md:h-[420px] rounded-2xl overflow-hidden border-2 border-[#e6decb] dark:border-[#2a3138] shadow-md bg-stone-100 dark:bg-stone-800">
+          <iframe 
+            title="TerraCoir Cochin Harbor Facility Location" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.385412895697!2d76.24269145!3d9.96742845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b086d4e21a8d051%3A0x6b6fa38bb4e18751!2sMattancherry%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Global Customer Support & Emergency B2B Cargo Desk -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-2xl border border-[#e6decb] dark:border-[#2a3138] bg-white dark:bg-[#1c2127] p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="space-y-2 text-center md:text-left">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#944422] dark:text-[#d4973b]">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> 24/7 Priority Logistics Helpline
+            </span>
+            <h3 class="text-xl sm:text-2xl font-black text-[#16191c] dark:text-white">
+              Need Urgent Container Tracking or Port Clearance?
+            </h3>
+            <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8] max-w-xl">
+              Active ocean shipments have a dedicated customs clearance officer assigned 24 hours a day, 7 days a week.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
+            <a href="tel:18005555883" class="w-full sm:w-auto text-center px-6 py-3 rounded-xl bg-[#16191c] text-white text-xs font-bold hover:bg-[#333d47] transition-colors">
+              Call Freight Desk: 1-800-555-COIR
+            </a>
+            <a href="mailto:customs@terracoir-goods.com" class="w-full sm:w-auto text-center px-6 py-3 rounded-xl border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold text-[#16191c] dark:text-white hover:border-[#944422] transition-colors">
+              customs@terracoir-goods.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Showroom Visitor Guidelines & FAQ Accordions -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Visitor Guidelines</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Showroom &amp; Mill Visit Information</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Practical details regarding appointments, parking, and on-site fiber specimen collection.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">Do I need an appointment to visit your Cochin or Kolkata showrooms?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Walk-in visitors are welcome between 10:00 AM and 5:00 PM Monday through Friday. For trade buyers and architects wishing to inspect our weaving pit looms, automated tufting equipment, or test tensile strength on geotextiles, we recommend scheduling 48 hours in advance so our senior mill manager can accompany you.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">Can international clients request a courier test box?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Yes. We dispatch DHL Express fiber specimen cases worldwide containing 10x10 cm cut specimens of all pile heights (15mm to 30mm coir), backing options (natural rubber latex, woven jute, PVC), and weave styles of golden jute burlap test strips. Courier charges are credited against your first order.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">What payment terms do you support for export contracts?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              We accept irrevocable, confirmed Letters of Credit (L/C at sight) from tier-1 international banks, as well as T/T wire transfers (30% deposit upon proforma invoice confirmation, 70% against Bill of Lading copy). For domestic enterprise accounts, net 30 payment terms are available subject to credit approval.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#e6decb] dark:border-[#2a3138] rounded-xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 bg-[#faf9f6] dark:bg-[#1c2127]">
+              <span class="font-bold text-xs sm:text-sm text-[#16191c] dark:text-white">Are all export containers fumigated with zero residual chemicals?</span>
+              <span class="faq-icon text-[#944422] font-black">+</span>
+            </button>
+            <div class="faq-content hidden p-4 sm:p-5 text-xs text-[#64748b] dark:text-[#94a3b8] border-t border-[#e6decb] dark:border-[#2a3138] leading-relaxed">
+              Every shipment is certified by the Plant Protection and Quarantine Department of the Government of India. We offer ISPM 15 heat treatment and natural non-toxic thermal pest control to ensure zero petroleum and pesticide residues on your organic home goods.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
+          </div>
+          <p class="text-xs text-[#94a3b8] leading-relaxed">
+            TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-[#d4973b] font-semibold">
+            <span>FSC Certified</span>
+            <span>&bull;</span>
+            <span>GOTS Organic</span>
+            <span>&bull;</span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home 1 (Consumer Retail)</a></li>
+            <li><a href="home-2.html" class="hover:text-white transition-colors">Home 2 (Civil &amp; Industrial)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Products Catalog &amp; Filter</a></li>
+            <li><a href="bulk-orders.html" class="hover:text-white transition-colors">Bulk &amp; Wholesale Procurement</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Coastal Mills</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Agronomy &amp; Fiber Journal</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Port Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
+          <ul class="space-y-2 text-xs text-[#94a3b8]">
+            <li>Heavy-Duty Coir Entrance Mats</li>
+            <li>Handwoven Natural Jute Area Rugs</li>
+            <li>Braided Golden Jute Storage Baskets</li>
+            <li>Biodegradable Market Carry Bags</li>
+            <li>ASTM D4595 Civil Coir Geotextiles</li>
+            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
+            <li>Organic Coconut Husk Plant Liners</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
+          <div class="text-xs space-y-2 text-[#94a3b8]">
+            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
+            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
+            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
+            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
+        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
+          <span>&bull;</span>
+          <span>Fair Trade Living Wages</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Toast Feedback -->
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">
+    <span id="toast-text">Action completed successfully.</span>
+  </div>
+
+  <!-- Global Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

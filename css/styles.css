@@ -1,0 +1,461 @@
+/* ==========================================================================
+   TerraCoir - Artisanal Coir & Golden Jute Products Store
+   Redesigned Identity: Burnt Terracotta Clay, Raw Golden Wheat, Deep Obsidian Slate
+   Tech Stack: HTML5, CSS3, Vanilla JS, Tailwind CSS CDN
+   Strict Directives: Clean Sans-Serif, Zero Gradients, Zero Morphism
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --heading-light: #16191c;     /* Deep Obsidian Slate - Shared uniformly across all H1-H6 */
+  --heading-dark: #f2f4f8;      /* Pure Natural Flax - Shared uniformly in dark mode */
+  --clay-primary: #944422;      /* Burnt Terracotta Clay */
+  --clay-hover: #793417;
+  --clay-tint: #fbeee8;
+  --slate-dark: #16191c;        /* Deep Obsidian Slate */
+  --wheat-gold: #d4973b;        /* Raw Golden Jute Fiber */
+  --wheat-hover: #b87c26;
+  --canvas-light: #faf9f6;      /* Architectural Alabaster Ecru */
+  --canvas-card: #ffffff;
+  --border-light: #e6decb;      /* Natural Woven Fiber Border */
+  --border-dark: #2a3138;       /* Clean Dark Border */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* CRITICAL FIX: overflow-x: clip prevents horizontal overflow WITHOUT creating a scroll container that breaks position: sticky */
+html, body {
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   STICKY NAVBAR & ELEVATION SHADOW
+   ========================================================================== */
+header {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important;
+  background-color: #faf9f6 !important;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+html.dark header {
+  background-color: #111417 !important;
+}
+
+header.header-scrolled {
+  box-shadow: 0 4px 20px -2px rgba(22, 25, 28, 0.08) !important;
+}
+
+html.dark header.header-scrolled {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* Ensure media never overflows container */
+img, svg, iframe, video {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   STRICT UNIFORM HEADING COLOR RULE:
+   Every single H1, H2, H3, H4, H5, H6 MUST share the exact same text color
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, .brand-heading {
+  color: #16191c !important;
+  letter-spacing: -0.025em;
+}
+
+html.dark h1, 
+html.dark h2, 
+html.dark h3, 
+html.dark h4, 
+html.dark h5, 
+html.dark h6, 
+html.dark .brand-heading {
+  color: #f2f4f8 !important;
+}
+
+/* Dark Banners & Footers: MUST ALWAYS HAVE PURE WHITE HEADINGS */
+.bg-slate-900 h1, .bg-slate-900 h2, .bg-slate-900 h3, .bg-slate-900 h4,
+.bg-slate-950 h1, .bg-slate-950 h2, .bg-slate-950 h3, .bg-slate-950 h4,
+.dark-banner h1, .dark-banner h2, .dark-banner h3, .dark-banner h4,
+footer h1, footer h2, footer h3, footer h4,
+footer .brand-heading,
+.hero-raw-bg h1,
+.text-white {
+  color: #ffffff !important;
+}
+
+.dark-banner p,
+.banner-desc {
+  color: #d1d7de !important;
+}
+
+/* ==========================================================================
+   RAW HERO BACKGROUND - 100% CLEAR VISUAL, STRICTLY ZERO OVERLAYS, ZERO OPACITY
+   ========================================================================== */
+.hero-raw-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* MULTI-LAYER DARK TEXT SHADOW FOR HERO HEADINGS & SUBTEXTS */
+.hero-heavy-shadow {
+  color: #ffffff !important;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.95),
+    0 4px 18px rgba(0, 0, 0, 0.9),
+    0 0 4px rgba(0, 0, 0, 1),
+    -1px -1px 0 rgba(0, 0, 0, 0.9),
+    1px -1px 0 rgba(0, 0, 0, 0.9),
+    -1px 1px 0 rgba(0, 0, 0, 0.9),
+    1px 1px 0 rgba(0, 0, 0, 0.9) !important;
+}
+
+.hero-subtext-shadow {
+  color: #ffffff !important;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.95),
+    0 3px 14px rgba(0, 0, 0, 0.9),
+    0 0 3px rgba(0, 0, 0, 1),
+    -1px -1px 0 rgba(0, 0, 0, 0.9),
+    1px -1px 0 rgba(0, 0, 0, 0.9),
+    -1px 1px 0 rgba(0, 0, 0, 0.9),
+    1px 1px 0 rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   RADICALLY NEW NAVBAR HOVER & ACTIVE STYLES: MODERN PILL / CAPSULE TABS
+   100% DIFFERENT FROM CANECRAFT UNDERLINE
+   ========================================================================== */
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px; /* Pill capsule */
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #404850;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+html.dark .nav-link {
+  color: #a2adb8;
+}
+
+/* Capsule Hover: soft terracotta clay wash */
+.nav-link:hover {
+  background-color: #f7ede7;
+  color: #944422;
+  transform: translateY(-1px);
+}
+
+html.dark .nav-link:hover {
+  background-color: #222830;
+  color: #e57a46;
+  transform: translateY(-1px);
+}
+
+/* Active Page: Solid Terracotta Clay Pill with White Bold Text */
+.nav-link.active-page {
+  background-color: #944422 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px -1px rgba(148, 68, 34, 0.35);
+}
+
+html.dark .nav-link.active-page {
+  background-color: #b8532c !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px -1px rgba(184, 83, 44, 0.5);
+}
+
+/* Modern Pill Style for Home Dropdown Selector */
+.home-select-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-select-wrapper select {
+  border-radius: 9999px !important;
+  padding: 0.45rem 1.85rem 0.45rem 1rem !important;
+  background-color: #f2ece3;
+  border: 1px solid #dcd1be;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #16191c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+html.dark .home-select-wrapper select {
+  background-color: #1c2228;
+  border-color: #2f3741;
+  color: #f2f4f8;
+}
+
+.home-select-wrapper.active-home select {
+  border-color: #944422;
+  box-shadow: 0 0 0 1px #944422;
+  color: #944422;
+}
+
+html.dark .home-select-wrapper.active-home select {
+  border-color: #e57a46;
+  box-shadow: 0 0 0 1px #e57a46;
+  color: #e57a46;
+}
+
+/* Mobile drawer navigation links */
+.mobile-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #404850;
+  transition: all 0.2s ease;
+}
+
+html.dark .mobile-nav-link {
+  color: #a2adb8;
+}
+
+.mobile-nav-link:hover {
+  background-color: #f7ede7;
+  color: #944422;
+}
+
+html.dark .mobile-nav-link:hover {
+  background-color: #222830;
+  color: #e57a46;
+}
+
+.mobile-nav-link.active-page {
+  background-color: #944422 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+html.dark .mobile-nav-link.active-page {
+  background-color: #b8532c !important;
+  color: #ffffff !important;
+}
+
+/* Validation shake animation */
+.field-error-shake {
+  animation: fieldShake 0.3s ease-in-out;
+}
+
+@keyframes fieldShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+/* ==========================================================================
+   SPECIMEN CARDS - COMPARTMENT HEIGHT LOCKING
+   ========================================================================== */
+.specimen-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-width: 0;
+  border-radius: 0.85rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.specimen-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -8px rgba(22, 25, 28, 0.12);
+}
+
+.specimen-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.specimen-card-footer {
+  margin-top: auto;
+}
+
+/* Locked compartment heights preventing zig-zag misalignment */
+.card-kicker-fixed {
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title-fixed {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-desc-fixed {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-specs-fixed {
+  min-height: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-quote-fixed {
+  min-height: 7.25rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-author-fixed {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* ==========================================================================
+   CUSTOM SOLID FLAT BADGES - PURE SOLID COLORS, NO GRADIENTS
+   ========================================================================== */
+.badge-clay {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  background-color: #944422;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+}
+
+.badge-slate {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  background-color: #16191c;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+}
+
+.badge-wheat {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  background-color: #f4ecdf;
+  color: #794d13;
+  border: 1px solid #e2d2ba;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+}
+
+html.dark .badge-wheat {
+  background-color: #2c251a;
+  color: #f2cb8d;
+  border-color: #483a25;
+}
+
+/* ==========================================================================
+   CENTERED FULL POPUP MODAL STYLES
+   ========================================================================== */
+.terracoir-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(14, 18, 22, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.terracoir-modal-box {
+  background-color: #faf9f6;
+  border: 2px solid #e6decb;
+  border-radius: 1rem;
+  max-width: 32rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .terracoir-modal-box {
+  background-color: #161a1f;
+  border-color: #2b333d;
+}
+
+/* RTL FIXES */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* ==========================================================================
+   TOAST NOTIFICATION COMPONENT (SOLID OBSIDIAN, ZERO BLUR)
+   ========================================================================== */
+#terracoir-toast-container {
+  z-index: 99999;
+}
+
+.terracoir-toast {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.animate-fade-in {
+  animation: toastFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

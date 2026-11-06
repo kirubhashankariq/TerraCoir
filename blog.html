@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fiber Chronicle | TerraCoir Agronomy & Sustainable Journal</title>
+  <meta name="description" content="Investigative articles, life-cycle analyses, and geotechnical research exploring natural coconut coir, golden jute, and zero-plastic architectural living.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fbeee8',
+              100: '#f7ddd1',
+              500: '#944422',
+              600: '#793417',
+              700: '#5e250f'
+            },
+            wheat: {
+              50: '#fcf8f0',
+              100: '#f7edda',
+              500: '#d4973b',
+              600: '#b87c26',
+              700: '#8c5916'
+            },
+            slate: {
+              850: '#1c2127',
+              900: '#16191c',
+              950: '#0f1114'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#faf9f6] dark:bg-[#111417] text-[#333d47] dark:text-[#e2e8f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#944422] selection:text-white w-full">
+  
+  <!-- Top Utility Bar: Deep Obsidian Slate (#16191c) -->
+  <div class="bg-[#16191c] text-[#cbd5e1] text-[11px] py-2 px-4 border-b border-[#2a3138] hidden md:block w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 truncate font-medium">
+        <span class="inline-flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-[#d4973b]"></span> FSC &amp; GOTS Certified Natural Coir &amp; Jute</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>100% Biodegradable &bull; Zero Microplastics</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>Direct Mill Hubs: Cochin &amp; Kolkata</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 font-medium">
+        <a href="tel:18005555883" class="hover:text-white transition-colors">Direct Desk: 1-800-555-COIR</a>
+        <span class="text-[#d4973b]">&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Port Logistics &amp; Showrooms</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Header (Fully Responsive from 320px to 1440px+) -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
+        
+        <!-- Brand Logo & Mark -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+              TERRA<span class="text-[#944422]">COIR</span>
+            </span>
+            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+              Natural Coir &amp; Golden Jute
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
+          
+      <div class="relative shrink-0 home-select-wrapper">
+        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
+        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
+          <option value="" selected disabled>Home Layouts &#x25BE;</option>
+          <option value="index.html">Home 1 (Consumer Retail)</option>
+          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
+        </select>
+      </div>
+          <a href="products.html" class="nav-link ">Products</a>
+          <a href="bulk-orders.html" class="nav-link ">Bulk Orders</a>
+          <a href="about.html" class="nav-link ">About Us</a>
+          <a href="blog.html" class="nav-link active-page">Blog</a>
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Desktop Header Utilities (xl: 1280px+) -->
+        <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="bulk-orders.html" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm transition-all hover:shadow whitespace-nowrap">
+            Bulk Quotation
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Controls (Active below 1280px: xl:hidden) -->
+        <div class="flex items-center gap-2 xl:hidden shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle RTL">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle Theme">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Open Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-in Modal) -->
+    <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-[#16191c]/80" aria-modal="true" role="dialog">
+      <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
+            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Home Select -->
+          <div class="space-y-1.5">
+            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
+            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
+              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Nav Links -->
+          <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+            <a href="products.html" class="mobile-nav-link ">Products</a>
+        <a href="bulk-orders.html" class="mobile-nav-link ">Bulk Orders</a>
+        <a href="about.html" class="mobile-nav-link ">About Us</a>
+        <a href="blog.html" class="mobile-nav-link active-page">Blog</a>
+        <a href="contact.html" class="mobile-nav-link ">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-[#e6decb] dark:border-[#2a3138] space-y-3">
+          <a href="bulk-orders.html" class="block w-full py-2.5 px-4 text-center bg-[#944422] text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-sm">
+            Wholesale Order Desk
+          </a>
+          <p class="text-[11px] text-[#6b7280] dark:text-[#94a3b8] text-center">
+            Toll-Free Direct: 1-800-555-COIR
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full">
+
+    <!-- Section 1: Hero Banner with Raw Background Image (Zero Overlays, Zero Opacity) -->
+    <section class="relative min-h-[380px] sm:min-h-[440px] flex items-center justify-center hero-raw-bg border-b border-[#e6decb] dark:border-[#2a3138]" style="background-image: url('https://images.pexels.com/photos/39395318/pexels-photo-39395318.jpeg');">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full flex flex-col items-center justify-center text-center">
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#16191c]/90 text-[#d4973b] text-xs font-bold uppercase tracking-wider border border-[#d4973b]/40 shadow-lg mx-auto">
+            <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+            The Fiber Chronicle &bull; Ecology &amp; Design
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black hero-heavy-shadow text-white text-center">
+            Botanical Fiber Agronomy &amp; Sustainable Architecture
+          </h1>
+          <p class="text-sm sm:text-base lg:text-lg text-white hero-subtext-shadow leading-relaxed font-semibold max-w-2xl mx-auto text-center">
+            Deep dives into circular material science, biological slope engineering, regenerative agriculture in Bengal, and non-toxic interior living spaces.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Lead Editorial Deep Dive -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl border-2 border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] overflow-hidden grid grid-cols-1 lg:grid-cols-12 shadow-lg">
+          
+          <div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-auto">
+            <img src="https://images.pexels.com/photos/5840868/pexels-photo-5840868.jpeg" alt="Macro view of natural coconut fiber doormat preventing microplastics" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute top-4 left-4 badge-clay">Lead Editorial</span>
+          </div>
+
+          <div class="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-xs text-[#64748b] dark:text-[#94a3b8]">
+                <span>Agronomy &bull; 8 Min Read</span>
+                <span>&bull;</span>
+                <span>Published October 2026</span>
+              </div>
+              <h2 class="text-xl sm:text-2xl font-black brand-heading leading-tight">
+                Why Replacing Petrochemical Doormats with Natural Coir Diverts 12kg of Ocean Microplastics Per Household
+              </h2>
+              <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8] leading-relaxed">
+                A quantitative lifecycle comparison tracking synthetic polymer degradation across residential entryways versus 100% compostable coconut husk fibers. Discover how small daily surface choices protect urban waterways.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-[#e6decb] dark:border-[#2a3138] flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Aruna Pillai" class="w-10 h-10 rounded-full object-cover">
+                <div>
+                  <h4 class="text-xs font-bold text-[#16191c] dark:text-white">Dr. Aruna Pillai</h4>
+                  <p class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">Senior Agronomist, Kerala Coir Board</p>
+                </div>
+              </div>
+              <span class="text-xs font-bold text-[#944422] dark:text-[#d4973b] uppercase">Full Study &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Articles Grid (6 In-Depth Knowledge Pieces) -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Curated Research</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Recent Investigative Articles</h2>
+          </div>
+          <span class="text-xs font-semibold text-[#64748b] dark:text-[#94a3b8]">Showing all 6 peer-reviewed guides</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://imgs.search.brave.com/0JVPB10bJdn387PMNmVzhdYljxYhOPS0aCDbW0JUo4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90eW5v/ZGdlby5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMTIv/RE1fMjAyNTA5MTUx/ODQ3MjRfMDAxLmpw/Zw" alt="Civil slope restoration with coir mesh" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Civil Geotextiles</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">5 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">The Mechanics of Biological Geotextiles on Steep Highway Cuts</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  How open-aperture 700 GSM coir netting dissipates raindrop impact velocity and binds topsoil during critical vegetation rooting.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                Read Geotechnical Whitepaper &rarr;
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.pexels.com/photos/17588761/pexels-photo-17588761.jpeg" alt="Golden Bengal jute raw stalks" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Agronomy</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">6 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Golden Jute vs Virgin Cotton: Comparing Global Water Footprints</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Jute is primarily rain-fed by monsoon precipitation, consuming 80% less irrigation water than conventional cotton crops.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                Read Ecological Comparison &rarr;
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.pexels.com/photos/4857941/pexels-photo-4857941.jpeg" alt="Architectural living room with large handwoven jute area rug" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Interior Design</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">4 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Architectural Styling: Layering Jute Rugs in Minimalist Spaces</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Design strategies for introducing tactile warmth and acoustic dampening to concrete and hardwood residential interiors.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                View Design Portfolio &rarr;
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.pexels.com/photos/14023912/pexels-photo-14023912.jpeg" alt="Alleppey traditional wooden pit loom artisan" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Artisan Guild</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">7 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Alleppey's Historic Loom Guilds: 300 Years of Fiber Spinning</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  An ethnographic review of Kerala backwater fiber cooperatives and the preservation of ancestral jacquard handloom techniques.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                Read Historical Account &rarr;
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.pexels.com/photos/31593916/pexels-photo-31593916.jpeg" alt="Composting organic coir mat in garden soil" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Circular Ecology</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">5 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Zero-Landfill Protocol: Returning Coir Mats Directly to Soil</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Step-by-step instructions on cutting worn coir mats into garden mulch and compost beds to enrich nitrogen-poor soils.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                Read Composting Guide &rarr;
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen-card bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] overflow-hidden rounded-xl">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.pexels.com/photos/11552880/pexels-photo-11552880.jpeg" alt="Green specialty coffee beans in natural burlap bag" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="specimen-card-body p-5">
+              <div class="card-kicker-fixed">
+                <span class="badge-clay">Agricultural Packaging</span>
+                <span class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">6 Min Read</span>
+              </div>
+              <div class="card-title-fixed mt-2">
+                <h3 class="text-base font-bold text-[#16191c] dark:text-white leading-snug">Food-Grade Burlap: Preventing Sweating in Specialty Coffee Cargo</h3>
+              </div>
+              <div class="card-desc-fixed">
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+                  Why porous vegetable-oil spun jute sacks remain the irreplaceable gold standard for preserving green coffee beans across ocean voyages.
+                </p>
+              </div>
+              <div class="specimen-card-footer pt-4 border-t border-[#e6decb] dark:border-[#2a3138] text-[11px] text-[#944422] dark:text-[#d4973b] font-bold">
+                Read Logistics Whitepaper &rarr;
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Industry Whitepapers & Technical Reports -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Engineering Library</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Download Official Technical Reports (PDF)</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Comprehensive technical publications documenting tensile performance, hydraulic permittivity, and life-cycle analyses.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] flex items-start gap-4">
+            <div class="w-12 h-12 rounded-lg bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center font-bold text-lg shrink-0">
+              PDF
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-sm font-bold text-[#16191c] dark:text-white">ASTM D4595 High-Tensile Coir Mesh Technical Field Report</h3>
+              <p class="text-xs text-[#64748b] dark:text-[#94a3b8]">Comprehensive lab data detailing tensile elongation, water flow, and 36-month shear resistance on 1:1 slopes.</p>
+              <a href="bulk-orders.html" class="inline-block text-xs font-bold text-[#944422] dark:text-[#d4973b] hover:underline">Download Datasheet (2.4 MB) &rarr;</a>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] flex items-start gap-4">
+            <div class="w-12 h-12 rounded-lg bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] flex items-center justify-center font-bold text-lg shrink-0">
+              PDF
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Comparative Life Cycle Analysis: Natural Coir vs. PVC Polymer Mats</h3>
+              <p class="text-xs text-[#64748b] dark:text-[#94a3b8]">Cradle-to-grave carbon footprint and microplastic leaching calculations conducted across 50,000 residential units.</p>
+              <a href="bulk-orders.html" class="inline-block text-xs font-bold text-[#944422] dark:text-[#d4973b] hover:underline">Download Report (1.8 MB) &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Author Spotlights & Agronomy Experts -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Editorial Board</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Meet Our Material Researchers</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            The scientists, engineers, and master weavers leading our technical studies and agronomy field trials.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Aruna Pillai" class="w-20 h-20 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Dr. Aruna Pillai</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Director of Fiber Science</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Ph.D. in Biomaterials from IIT Madras. 18 years researching natural lignin stabilization and soil microbiological integration.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Suresh Namboodiri" class="w-20 h-20 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Suresh Namboodiri</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Master Loom Weaver &amp; Historian</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Third-generation Alleppey weaver overseeing our heritage jacquard looms and ethical artisan apprenticeship training.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Marcus Thorne" class="w-20 h-20 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Marcus Thorne, PE</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Civil Geotechnical Lead</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Licensed civil engineer specializing in soil erosion hydraulics, riverbank revetments, and alpine slope stabilization.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Newsletter Subscription & Eco Digest Sign-up -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-[#944422]"></span>
+          Bi-Weekly Fiber Dispatch
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">
+          Subscribe to The Fiber Chronicle
+        </h2>
+        <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8] leading-relaxed max-w-xl mx-auto">
+          Get direct access to peer-reviewed agronomy papers, circular interior design case studies, and advance notifications for new seasonal loom collections.
+        </p>
+
+        <form class="needs-strict-validation max-w-md mx-auto flex flex-col sm:flex-row gap-2" novalidate>
+          <div class="flex-grow space-y-1">
+            <input type="email" name="email" required placeholder="Enter your professional email..." class="w-full text-xs p-3 rounded-lg border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#111417] text-[#16191c] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#944422]">
+          </div>
+          <button type="submit" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-lg transition-colors whitespace-nowrap">
+            Join 12,000+ Readers
+          </button>
+        </form>
+        <p class="text-[11px] text-[#94a3b8]">Zero spam. Unsubscribe with one click anytime.</p>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
+          </div>
+          <p class="text-xs text-[#94a3b8] leading-relaxed">
+            TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-[#d4973b] font-semibold">
+            <span>FSC Certified</span>
+            <span>&bull;</span>
+            <span>GOTS Organic</span>
+            <span>&bull;</span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home 1 (Consumer Retail)</a></li>
+            <li><a href="home-2.html" class="hover:text-white transition-colors">Home 2 (Civil &amp; Industrial)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Products Catalog &amp; Filter</a></li>
+            <li><a href="bulk-orders.html" class="hover:text-white transition-colors">Bulk &amp; Wholesale Procurement</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Coastal Mills</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Agronomy &amp; Fiber Journal</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Port Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
+          <ul class="space-y-2 text-xs text-[#94a3b8]">
+            <li>Heavy-Duty Coir Entrance Mats</li>
+            <li>Handwoven Natural Jute Area Rugs</li>
+            <li>Braided Golden Jute Storage Baskets</li>
+            <li>Biodegradable Market Carry Bags</li>
+            <li>ASTM D4595 Civil Coir Geotextiles</li>
+            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
+            <li>Organic Coconut Husk Plant Liners</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
+          <div class="text-xs space-y-2 text-[#94a3b8]">
+            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
+            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
+            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
+            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
+        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
+          <span>&bull;</span>
+          <span>Fair Trade Living Wages</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Toast Feedback -->
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">
+    <span id="toast-text">Action completed successfully.</span>
+  </div>
+
+  <!-- Global Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Coastal Mills | TerraCoir Heritage & Craftsmanship</title>
+  <meta name="description" content="Learn the story of TerraCoir: operating dual coastal facilities in Kerala and Bengal to produce 100% biodegradable coir mats and handwoven golden jute.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fbeee8',
+              100: '#f7ddd1',
+              500: '#944422',
+              600: '#793417',
+              700: '#5e250f'
+            },
+            wheat: {
+              50: '#fcf8f0',
+              100: '#f7edda',
+              500: '#d4973b',
+              600: '#b87c26',
+              700: '#8c5916'
+            },
+            slate: {
+              850: '#1c2127',
+              900: '#16191c',
+              950: '#0f1114'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#faf9f6] dark:bg-[#111417] text-[#333d47] dark:text-[#e2e8f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#944422] selection:text-white w-full">
+  
+  <!-- Top Utility Bar: Deep Obsidian Slate (#16191c) -->
+  <div class="bg-[#16191c] text-[#cbd5e1] text-[11px] py-2 px-4 border-b border-[#2a3138] hidden md:block w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 truncate font-medium">
+        <span class="inline-flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-[#d4973b]"></span> FSC &amp; GOTS Certified Natural Coir &amp; Jute</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>100% Biodegradable &bull; Zero Microplastics</span>
+        <span class="text-[#d4973b]">&bull;</span>
+        <span>Direct Mill Hubs: Cochin &amp; Kolkata</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 font-medium">
+        <a href="tel:18005555883" class="hover:text-white transition-colors">Direct Desk: 1-800-555-COIR</a>
+        <span class="text-[#d4973b]">&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Port Logistics &amp; Showrooms</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Header (Fully Responsive from 320px to 1440px+) -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
+        
+        <!-- Brand Logo & Mark -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+              TERRA<span class="text-[#944422]">COIR</span>
+            </span>
+            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+              Natural Coir &amp; Golden Jute
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
+          
+      <div class="relative shrink-0 home-select-wrapper">
+        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
+        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
+          <option value="" selected disabled>Home Layouts &#x25BE;</option>
+          <option value="index.html">Home 1 (Consumer Retail)</option>
+          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
+        </select>
+      </div>
+          <a href="products.html" class="nav-link ">Products</a>
+          <a href="bulk-orders.html" class="nav-link ">Bulk Orders</a>
+          <a href="about.html" class="nav-link active-page">About Us</a>
+          <a href="blog.html" class="nav-link ">Blog</a>
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Desktop Header Utilities (xl: 1280px+) -->
+        <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="bulk-orders.html" class="bg-[#944422] hover:bg-[#793417] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm transition-all hover:shadow whitespace-nowrap">
+            Bulk Quotation
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Controls (Active below 1280px: xl:hidden) -->
+        <div class="flex items-center gap-2 xl:hidden shrink-0">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle RTL">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1]" aria-label="Toggle Theme">
+            <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn p-2 rounded-lg border border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Open Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-in Modal) -->
+    <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-[#16191c]/80" aria-modal="true" role="dialog">
+      <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
+            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Home Select -->
+          <div class="space-y-1.5">
+            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
+            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
+              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Nav Links -->
+          <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+            <a href="products.html" class="mobile-nav-link ">Products</a>
+        <a href="bulk-orders.html" class="mobile-nav-link ">Bulk Orders</a>
+        <a href="about.html" class="mobile-nav-link active-page">About Us</a>
+        <a href="blog.html" class="mobile-nav-link ">Blog</a>
+        <a href="contact.html" class="mobile-nav-link ">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-[#e6decb] dark:border-[#2a3138] space-y-3">
+          <a href="bulk-orders.html" class="block w-full py-2.5 px-4 text-center bg-[#944422] text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-sm">
+            Wholesale Order Desk
+          </a>
+          <p class="text-[11px] text-[#6b7280] dark:text-[#94a3b8] text-center">
+            Toll-Free Direct: 1-800-555-COIR
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full">
+
+    <!-- Section 1: Hero Banner with Raw Background Image (Zero Overlays, Zero Opacity) -->
+    <section class="relative min-h-[380px] sm:min-h-[440px] flex items-center justify-center hero-raw-bg border-b border-[#e6decb] dark:border-[#2a3138]" style="background-image: url('https://images.pexels.com/photos/36319628/pexels-photo-36319628.jpeg');">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full flex flex-col items-center justify-center text-center">
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#16191c]/90 text-[#d4973b] text-xs font-bold uppercase tracking-wider border border-[#d4973b]/40 shadow-lg mx-auto">
+            <span class="w-2 h-2 rounded-full bg-[#d4973b]"></span>
+            The TerraCoir Manifesto
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black hero-heavy-shadow text-white text-center">
+            Rooted in Soil. Woven by Artisans. Engineered for Tomorrow.
+          </h1>
+          <p class="text-sm sm:text-base lg:text-lg text-white hero-subtext-shadow leading-relaxed font-semibold max-w-2xl mx-auto text-center">
+            Founded in 2011, TerraCoir was built on a singular conviction: humanity does not need synthetic petroleum plastics to furnish functional living spaces or stabilize civil landscapes. The Earth has already provided the ultimate high-tensile fibers in coconut husks and golden jute.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Our Two Coastal Hubs: Kerala & Bengal -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Geographic Roots</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Two Distinct Coastal Hubs of Craft &amp; Industry</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            We operate twin production hubs positioned directly at the natural agricultural epicenters of coconut coir and golden jute.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <div class="p-8 rounded-2xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="badge-clay">Cochin, Kerala</span>
+              <span class="text-xs font-bold text-[#64748b] dark:text-[#94a3b8]">South Indian Coast</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#16191c] dark:text-white">The Coconut Coir Capital</h3>
+            <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8] leading-relaxed">
+              Situated alongside the historic saline backwaters of Alleppey and Cochin, our southern facility specializes in traditional brackish water retting, mechanical bristle decortication, high-density tufted entrance mats, and ASTM civil geotextile weaving.
+            </p>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ 450 artisanal pit looms and 12 automatic jacquard heads</li>
+              <li>✓ Dedicated solar drying yards handling 60 metric tons weekly</li>
+              <li>✓ Direct deepwater port access at Cochin Container Terminal</li>
+            </ul>
+          </div>
+
+          <div class="p-8 rounded-2xl bg-[#faf9f6] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="badge-clay">Kolkata, West Bengal</span>
+              <span class="text-xs font-bold text-[#64748b] dark:text-[#94a3b8]">Ganges Delta Belt</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#16191c] dark:text-white">The Golden Jute Delta</h3>
+            <p class="text-xs sm:text-sm text-[#4b5563] dark:text-[#94a3b8] leading-relaxed">
+              Located on the fertile alluvial plains of the Hooghly River, our eastern mill processes ultra-fine, long-staple Corchorus olitorius jute into lustrous interior area rugs, braided baskets, fine market tote bags, and hydrocarbon-free agricultural burlap sacks.
+            </p>
+            <ul class="text-xs text-[#64748b] dark:text-[#94a3b8] space-y-2 pt-2 border-t border-[#e6decb] dark:border-[#2a3138]">
+              <li>✓ Vegetable oil treatment (VOT) certified spinning machinery</li>
+              <li>✓ Zero mineral oil contamination guarantee for food coffee bags</li>
+              <li>✓ International export loading at Kolkata Port docks</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: The 5-Step Artisanal Spinning & Weaving Process -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Master Craftsmanship</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">From Coconut Grove to Finished Masterpiece</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Discover the exact five-stage transformation honoring generational Kerala and Bengal weaving traditions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          
+          <div class="p-5 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-2">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">01 &bull; Retting</span>
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Natural Soaking</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Husks and stalks are submerged in natural tidal lagoons where microorganisms soften the woody core.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-2">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">02 &bull; Combing</span>
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Fiber Carding</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Rotating steel wire drums comb out the golden bristle fibers, sorting them by tensile strength and length.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-2">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">03 &bull; Spinning</span>
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Yarn Twisting</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Women artisans spin the carded fibers into uniform 2-ply and 3-ply yarns using traditional spinning wheels.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-2">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">04 &bull; Looms</span>
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Hand Weaving</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Artisans operate heavy wooden pit looms, interlocking the warp and weft into dense architectural weaves.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-2">
+            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">05 &bull; Finishing</span>
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Shearing &amp; QC</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Hand-sheared to uniform pile heights, bonded with natural tree latex, and inspected against ASTM standards.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Verified Impact Counters & Circular Economy Metrics -->
+    <section class="py-14 sm:py-18 bg-[#16191c] text-white border-b border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#d4973b]">Environmental Audit</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Our Measurable Ecological Footprint</h2>
+          <p class="text-xs sm:text-sm text-[#94a3b8]">
+            Every metric is independently audited every quarter through third-party environmental lifecycle assessments.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          
+          <div class="p-6 rounded-xl bg-[#1c2127] border border-[#2a3138] space-y-2">
+            <p class="text-3xl sm:text-4xl font-black text-[#d4973b]">1,280 MT</p>
+            <p class="text-xs font-bold text-white">Plastic Waste Diverted</p>
+            <p class="text-[11px] text-[#94a3b8]">Replacing synthetic PVC mats and polypropylene packaging.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-[#1c2127] border border-[#2a3138] space-y-2">
+            <p class="text-3xl sm:text-4xl font-black text-[#d4973b]">850+</p>
+            <p class="text-xs font-bold text-white">Artisan Families Supported</p>
+            <p class="text-[11px] text-[#94a3b8]">Guaranteed living wages across Kerala and Bengal cooperatives.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-[#1c2127] border border-[#2a3138] space-y-2">
+            <p class="text-3xl sm:text-4xl font-black text-[#d4973b]">94%</p>
+            <p class="text-xs font-bold text-white">Solar Powered Operations</p>
+            <p class="text-[11px] text-[#94a3b8]">Rooftop photovoltaic arrays power our carding and loom machinery.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-[#1c2127] border border-[#2a3138] space-y-2">
+            <p class="text-3xl sm:text-4xl font-black text-[#d4973b]">0%</p>
+            <p class="text-xs font-bold text-white">Landfill Contribution</p>
+            <p class="text-[11px] text-[#94a3b8]">All scrap fiber trimmings are re-carded or composted into organic mulch.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Master Weavers & Leadership Team -->
+    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Leadership &amp; Heritage</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">The Guardians of Natural Fiber Engineering</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Meet the agronomists, master weavers, and circular design leaders steering TerraCoir's global operations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Kiran Varma" class="w-24 h-24 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Kiran Varma</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Managing Director &amp; Co-Founder</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              22 years in international agricultural trade. Spearheaded the transition from petrochemical burlap to certified VOT food sacks.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Aruna Pillai" class="w-24 h-24 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Dr. Aruna Pillai</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Head of Fiber Science &amp; R&amp;D</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Leading research into natural vulcanized tree latex bonding and high-tensile geotechnical aperture design.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Suresh Namboodiri" class="w-24 h-24 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Suresh Namboodiri</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Master Loom Director</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Preserving Alleppey's 300-year pit loom traditions while mentoring over 140 young apprentice weavers each year.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Ananya Roy" class="w-24 h-24 rounded-full object-cover mx-auto">
+            <h3 class="text-sm font-bold text-[#16191c] dark:text-white">Ananya Roy</h3>
+            <p class="text-[11px] font-semibold text-[#944422] dark:text-[#d4973b]">Director of Bengal Cooperatives</p>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
+              Directing our fair trade women's jute spinning clusters across the Nadia and Murshidabad delta districts.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Global Fair Trade Certifications & ISO Accreditations -->
+    <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Global Assurance</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Certified Rigor Across Every Stage</h2>
+          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
+            Our manufacturing and social compliance are independently verified by recognized international auditing bodies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-center space-y-2">
+            <div class="w-12 h-12 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] font-bold flex items-center justify-center mx-auto text-sm">GOTS</div>
+            <h3 class="text-xs font-bold text-[#16191c] dark:text-white">Global Organic Textile Standard</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">100% organic certification for unbleached jute yarn.</p>
+          </div>
+
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-center space-y-2">
+            <div class="w-12 h-12 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] font-bold flex items-center justify-center mx-auto text-sm">ISO</div>
+            <h3 class="text-xs font-bold text-[#16191c] dark:text-white">ISO 9001:2015 &amp; ISO 14001</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">Certified quality and environmental management systems.</p>
+          </div>
+
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-center space-y-2">
+            <div class="w-12 h-12 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] font-bold flex items-center justify-center mx-auto text-sm">SMETA</div>
+            <h3 class="text-xs font-bold text-[#16191c] dark:text-white">Sedex SMETA 4-Pillar Audited</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">Verified labor standards, health, safety, and business ethics.</p>
+          </div>
+
+          <div class="p-6 rounded-xl border border-[#e6decb] dark:border-[#2a3138] bg-[#faf9f6] dark:bg-[#1c2127] text-center space-y-2">
+            <div class="w-12 h-12 rounded-full bg-[#fbeee8] dark:bg-[#251e1a] text-[#944422] dark:text-[#d4973b] font-bold flex items-center justify-center mx-auto text-sm">FTF</div>
+            <h3 class="text-xs font-bold text-[#16191c] dark:text-white">Fair Trade Federation Member</h3>
+            <p class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">Guaranteed living wages and transparent community investments.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
+          </div>
+          <p class="text-xs text-[#94a3b8] leading-relaxed">
+            TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-[#d4973b] font-semibold">
+            <span>FSC Certified</span>
+            <span>&bull;</span>
+            <span>GOTS Organic</span>
+            <span>&bull;</span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home 1 (Consumer Retail)</a></li>
+            <li><a href="home-2.html" class="hover:text-white transition-colors">Home 2 (Civil &amp; Industrial)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Products Catalog &amp; Filter</a></li>
+            <li><a href="bulk-orders.html" class="hover:text-white transition-colors">Bulk &amp; Wholesale Procurement</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Coastal Mills</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Agronomy &amp; Fiber Journal</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Port Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
+          <ul class="space-y-2 text-xs text-[#94a3b8]">
+            <li>Heavy-Duty Coir Entrance Mats</li>
+            <li>Handwoven Natural Jute Area Rugs</li>
+            <li>Braided Golden Jute Storage Baskets</li>
+            <li>Biodegradable Market Carry Bags</li>
+            <li>ASTM D4595 Civil Coir Geotextiles</li>
+            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
+            <li>Organic Coconut Husk Plant Liners</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
+          <div class="text-xs space-y-2 text-[#94a3b8]">
+            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
+            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
+            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
+            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
+        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
+          <span>&bull;</span>
+          <span>Fair Trade Living Wages</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Toast Feedback -->
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">
+    <span id="toast-text">Action completed successfully.</span>
+  </div>
+
+  <!-- Global Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
