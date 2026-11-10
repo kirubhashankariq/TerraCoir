@@ -69,15 +69,15 @@
       <div class="flex items-center justify-between h-16 sm:h-20 w-full gap-2">
         
         <!-- Brand Logo & Mark -->
-        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
-          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/20 shadow-sm transition-transform group-hover:scale-105 shrink-0">
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group relative z-20" aria-label="TerraCoir Home">
+          <div class="w-10 h-10 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 shadow-sm transition-transform group-hover:scale-105 shrink-0">
             <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
           </div>
           <div class="flex flex-col justify-center">
-            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight brand-heading uppercase">
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight uppercase text-[#16191c] dark:text-white">
               TERRA<span class="text-[#944422]">COIR</span>
             </span>
-            <span class="hidden sm:block text-[9px] font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b] leading-tight">
+            <span class="block text-[9px] font-bold uppercase tracking-widest text-[#944422] leading-tight">
               Natural Coir &amp; Golden Jute
             </span>
           </div>
@@ -86,14 +86,37 @@
         <!-- Desktop Navigation (Displayed on xl: 1280px+ to ensure zero clipping) -->
         <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-2.5" aria-label="Main Navigation">
           
-      <div class="relative shrink-0 home-select-wrapper">
-        <label for="desktop-home-select" class="sr-only">Select Home Page</label>
-        <select id="desktop-home-select" class="home-demo-select bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-semibold py-1.5 px-3 pr-8 rounded-full text-[#4b5563] dark:text-[#cbd5e1] hover:border-[#944422] focus:outline-none focus:ring-2 focus:ring-[#944422] cursor-pointer">
-          <option value="" selected disabled>Home Layouts &#x25BE;</option>
-          <option value="index.html">Home 1 (Consumer Retail)</option>
-          <option value="home-2.html">Home 2 (Civil & Industrial)</option>
-        </select>
-      </div>
+          <!-- Designed Home Dropdown Menu -->
+          <div class="relative group home-dropdown-container">
+            <button type="button" class="nav-link home-dropdown-btn flex items-center gap-1.5 cursor-pointer font-bold " aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            
+            <div class="home-dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div class="bg-[#ffffff] dark:bg-[#1c2127] rounded-2xl shadow-2xl border border-[#e6decb] dark:border-[#2a3138] p-2 space-y-1">
+                <a href="index.html" class="flex items-start gap-3 p-2.5 rounded-xl transition-all hover:bg-stone-50 dark:hover:bg-[#252b33] text-[#16191c] dark:text-white">
+                  <div class="w-8 h-8 rounded-lg bg-stone-100 dark:bg-stone-800 text-[#944422] dark:text-[#d4973b] flex items-center justify-center shrink-0 text-xs font-black">
+                    H1
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-bold leading-tight">Home 1</span>
+                    <span class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">Consumer &amp; Retail Store</span>
+                  </div>
+                </a>
+                <a href="home-2.html" class="flex items-start gap-3 p-2.5 rounded-xl transition-all hover:bg-stone-50 dark:hover:bg-[#252b33] text-[#16191c] dark:text-white">
+                  <div class="w-8 h-8 rounded-lg bg-stone-100 dark:bg-stone-800 text-[#944422] dark:text-[#d4973b] flex items-center justify-center shrink-0 text-xs font-black">
+                    H2
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-bold leading-tight">Home 2</span>
+                    <span class="text-[11px] text-[#64748b] dark:text-[#94a3b8]">Civil Geotextiles &amp; B2B Export</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a href="products.html" class="nav-link ">Products</a>
           <a href="bulk-orders.html" class="nav-link active-page">Bulk Orders</a>
           <a href="about.html" class="nav-link ">About Us</a>
@@ -103,10 +126,10 @@
 
         <!-- Desktop Header Utilities (xl: 1280px+) -->
         <div class="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
-          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors cursor-pointer" title="Toggle RTL Direction" aria-label="Toggle RTL Direction">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
           </button>
-          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+          <button type="button" class="theme-toggle-btn p-2 rounded-full border border-[#e6decb] dark:border-[#2a3138] text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] hover:text-[#944422] dark:hover:bg-[#251e1a] transition-colors cursor-pointer" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
             <svg class="w-4 h-4 hidden dark:block text-[#d4973b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
             <svg class="w-4 h-4 block dark:hidden text-[#16191c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           </button>
@@ -137,27 +160,40 @@
       <div class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#faf9f6] dark:bg-[#16191c] border-l border-[#e6decb] dark:border-[#2a3138] p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
         <div class="space-y-6">
           <div class="flex items-center justify-between pb-4 border-b border-[#e6decb] dark:border-[#2a3138]">
-            <span class="font-extrabold text-lg brand-heading uppercase">TERRA<span class="text-[#944422]">COIR</span></span>
+            <a href="index.html" class="flex items-center gap-2.5 group cursor-pointer" aria-label="TerraCoir Home">
+              <div class="w-9 h-9 bg-[#fbeee8] dark:bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 shadow-sm shrink-0">
+                <svg class="w-5 h-5 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <span class="block text-base font-extrabold uppercase tracking-tight text-[#16191c] dark:text-white">TERRA<span class="text-[#944422]">COIR</span></span>
+                <span class="block text-[8px] font-bold uppercase tracking-widest text-[#944422]">Natural Coir &amp; Jute</span>
+              </div>
+            </a>
             <button type="button" id="mobile-drawer-close" class="mobile-menu-close p-2 rounded-lg text-[#4b5563] dark:text-[#cbd5e1] hover:bg-[#fbeee8] dark:hover:bg-[#251e1a]" aria-label="Close Navigation Menu">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
           </div>
 
-          <!-- Mobile Home Select -->
-          <div class="space-y-1.5">
-            <label for="mobile-home-select" class="block text-xs font-bold uppercase tracking-wider text-[#944422]">Layout Switcher</label>
-            <select id="mobile-home-select" class="home-demo-select w-full bg-[#ffffff] dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] text-xs font-bold py-2.5 px-3 rounded-lg text-[#16191c] dark:text-[#f2f4f8]">
-              <option value="" selected disabled>Home Layouts &#x25BE;</option><option value="index.html">Home 1 (Consumer Retail)</option><option value="home-2.html">Home 2 (Civil & Industrial)</option>
-            </select>
+          <!-- Mobile Home Accordion / Sublinks -->
+          <div class="space-y-1">
+            <span class="block text-xs font-bold uppercase tracking-wider text-[#944422] mb-1">Home Layouts</span>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="index.html" class="p-2.5 rounded-lg border text-center text-xs font-bold transition-all bg-white dark:bg-[#1c2127] border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:border-[#944422]">
+                Home 1
+              </a>
+              <a href="home-2.html" class="p-2.5 rounded-lg border text-center text-xs font-bold transition-all bg-white dark:bg-[#1c2127] border-[#e6decb] dark:border-[#2a3138] text-[#16191c] dark:text-white hover:border-[#944422]">
+                Home 2
+              </a>
+            </div>
           </div>
 
           <!-- Mobile Nav Links -->
           <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
             <a href="products.html" class="mobile-nav-link ">Products</a>
-        <a href="bulk-orders.html" class="mobile-nav-link active-page">Bulk Orders</a>
-        <a href="about.html" class="mobile-nav-link ">About Us</a>
-        <a href="blog.html" class="mobile-nav-link ">Blog</a>
-        <a href="contact.html" class="mobile-nav-link ">Contact</a>
+            <a href="bulk-orders.html" class="mobile-nav-link active-page">Bulk Orders</a>
+            <a href="about.html" class="mobile-nav-link ">About Us</a>
+            <a href="blog.html" class="mobile-nav-link ">Blog</a>
+            <a href="contact.html" class="mobile-nav-link ">Contact</a>
           </nav>
         </div>
 
@@ -172,6 +208,8 @@
       </div>
     </div>
   </header>
+
+  
 
   <main class="flex-grow w-full">
 
@@ -414,48 +452,7 @@
       </div>
     </section>
 
-    <!-- Section 5: International Shipping, Port Inspection & Incoterms -->
-    <section class="py-14 sm:py-18 bg-[#faf9f6] dark:bg-[#111417] border-b border-[#e6decb] dark:border-[#2a3138]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#944422] dark:text-[#d4973b]">Export Standards</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold brand-heading">Global Shipping Terms &amp; Phytosanitary Compliance</h2>
-          <p class="text-xs sm:text-sm text-[#64748b] dark:text-[#94a3b8]">
-            We navigate international customs declarations, ocean bills of lading, and port clearance procedures for seamless arrival.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
-            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Incoterms 2020</span>
-            <h3 class="text-base font-bold text-[#16191c] dark:text-white">FOB, CIF, CFR, &amp; DDP</h3>
-            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
-              We ship under standard international commercial terms from Cochin Port (South India) and Syama Prasad Mookerjee Port Kolkata (East India).
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
-            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Biosecurity</span>
-            <h3 class="text-base font-bold text-[#16191c] dark:text-white">Phytosanitary &amp; Fumigation</h3>
-            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
-              All coir and jute consignments undergo mandatory methyl bromide or heat treatment with official government quarantine certificates for USA, EU, and Australia.
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-[#e6decb] dark:border-[#2a3138] space-y-3">
-            <span class="text-xs font-black text-[#944422] dark:text-[#d4973b]">Third-Party Audit</span>
-            <h3 class="text-base font-bold text-[#16191c] dark:text-white">SGS &amp; Bureau Veritas Inspection</h3>
-            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">
-              Buyers can nominate pre-shipment container inspections to independently verify GSM weights, tensile tests, moisture content, and piece counts.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
+    
 
     <!-- Section 6: Wholesale FAQs & Quality Assurance Guarantee -->
     <section class="py-14 sm:py-18 bg-white dark:bg-[#16191c]">
@@ -510,17 +507,26 @@
 
   
   <!-- Global Footer: Deep Obsidian Slate (#16191c) -->
+  <!-- Footer (Deep Obsidian Slate #16191c, Uniform Brand Mark & Socials) -->
   <footer class="bg-[#16191c] text-[#cbd5e1] border-t border-[#2a3138] w-full pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2a3138]">
         
+        <!-- Column 1: Brand & Socials -->
         <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 text-[#d4973b]">
+          <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" aria-label="TerraCoir Home">
+            <div class="w-10 h-10 bg-[#251e1a] rounded-lg flex items-center justify-center border border-[#944422]/30 shadow-sm transition-transform group-hover:scale-105 shrink-0">
               <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#944422]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3L3 12l9 9 9-9-9-9zM3 12h18M12 3v18"/></svg>
             </div>
-            <span class="text-xl font-extrabold tracking-tight text-white uppercase">TERRA<span class="text-[#d4973b]">COIR</span></span>
-          </div>
+            <div class="flex flex-col justify-center">
+              <span class="block text-lg sm:text-xl font-extrabold tracking-tight leading-tight uppercase text-white">
+                TERRA<span class="text-[#944422]">COIR</span>
+              </span>
+              <span class="block text-[9px] font-bold uppercase tracking-widest text-[#944422] leading-tight">
+                Natural Coir &amp; Golden Jute
+              </span>
+            </div>
+          </a>
           <p class="text-xs text-[#94a3b8] leading-relaxed">
             TerraCoir is a premier manufacturer and international exporter of zero-plastic coconut coir products, handwoven golden jute floor coverings, and ASTM-tested civil engineering geotextiles.
           </p>
@@ -531,8 +537,31 @@
             <span>&bull;</span>
             <span>ISO 9001:2015</span>
           </div>
+
+          <!-- Official Social Media Icons -->
+          <div class="pt-2">
+            <span class="block text-[11px] font-bold uppercase tracking-wider text-[#94a3b8] mb-2.5">Follow Our Craft &amp; Shipments</span>
+            <div class="flex items-center gap-2.5">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-[#1c2127] border border-[#2a3138] flex items-center justify-center text-[#94a3b8] hover:text-white hover:bg-[#944422] hover:border-[#944422] transition-all shadow-sm" title="Follow us on X (Twitter)" aria-label="X (formerly Twitter)">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-[#1c2127] border border-[#2a3138] flex items-center justify-center text-[#94a3b8] hover:text-white hover:bg-[#944422] hover:border-[#944422] transition-all shadow-sm" title="Follow us on Instagram" aria-label="Instagram">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-[#1c2127] border border-[#2a3138] flex items-center justify-center text-[#94a3b8] hover:text-white hover:bg-[#944422] hover:border-[#944422] transition-all shadow-sm" title="Connect on LinkedIn" aria-label="LinkedIn">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-[#1c2127] border border-[#2a3138] flex items-center justify-center text-[#94a3b8] hover:text-white hover:bg-[#944422] hover:border-[#944422] transition-all shadow-sm" title="Follow us on Facebook" aria-label="Facebook">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-[#1c2127] border border-[#2a3138] flex items-center justify-center text-[#94a3b8] hover:text-white hover:bg-[#944422] hover:border-[#944422] transition-all shadow-sm" title="Subscribe on YouTube" aria-label="YouTube">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
+        <!-- Column 2: Direct Pages -->
         <div class="space-y-4">
           <h4 class="text-sm font-bold uppercase tracking-wider text-white">Direct Pages</h4>
           <ul class="space-y-2 text-xs">
@@ -546,6 +575,7 @@
           </ul>
         </div>
 
+        <!-- Column 3: Product Lines -->
         <div class="space-y-4">
           <h4 class="text-sm font-bold uppercase tracking-wider text-white">Product Lines</h4>
           <ul class="space-y-2 text-xs text-[#94a3b8]">
@@ -554,33 +584,42 @@
             <li>Braided Golden Jute Storage Baskets</li>
             <li>Biodegradable Market Carry Bags</li>
             <li>ASTM D4595 Civil Coir Geotextiles</li>
-            <li>Hydrocarbon-Free Coffee Burlap Bags</li>
-            <li>Organic Coconut Husk Plant Liners</li>
+            <li>Hydrocarbon-Free Coffee Bags</li>
           </ul>
         </div>
 
+        <!-- Column 4: Coastal Desks -->
         <div class="space-y-4">
-          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Operations</h4>
-          <div class="text-xs space-y-2 text-[#94a3b8]">
-            <p><strong class="text-white">Cochin Harbor Hub:</strong> Mattancherry Marine Drive, Cochin, Kerala 682002</p>
-            <p><strong class="text-white">Kolkata Delta Mill:</strong> Strand Road, Port Zone, Kolkata, West Bengal 700001</p>
-            <p><strong class="text-white">Direct Phone:</strong> 1-800-555-COIR (2647)</p>
-            <p><strong class="text-white">Logistics Email:</strong> dispatch@terracoir-goods.com</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Coastal Mill Hubs</h4>
+          <div class="space-y-3 text-xs text-[#94a3b8]">
+            <div>
+              <p class="font-bold text-white">Cochin Harbor Hub (Kerala)</p>
+              <p class="text-[11px]">Mattancherry Wharf, Cochin Port Trust, Kochi 682001</p>
+              <p class="text-[11px] text-[#d4973b] font-medium">+91 484 266 8411</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Kolkata Jute Hub (Bengal)</p>
+              <p class="text-[11px]">Budge Budge Trunk Rd, Hooghly Industrial Reach, 700137</p>
+              <p class="text-[11px] text-[#d4973b] font-medium">+91 33 2490 1920</p>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748b]">
-        <p>&copy; 2026 TerraCoir Sustainable Fibers Ltd. All Rights Reserved.</p>
-        <div class="flex items-center gap-4">
-          <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 100% Plastic-Free Packaging</span>
-          <span>&bull;</span>
-          <span>Fair Trade Living Wages</span>
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94a3b8]">
+        <p>&copy; 2026 TerraCoir Sustainable Goods. All rights reserved. Zero synthetic plastic commitment.</p>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-white transition-colors">Export Terms</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Phytosanitary Protocol</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Privacy &amp; Compliance</a>
         </div>
       </div>
     </div>
   </footer>
+
+
 
   <!-- Universal Toast Feedback -->
   <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-[#16191c] text-white px-5 py-3 rounded-lg shadow-xl text-xs font-semibold border-l-4 border-[#944422]">

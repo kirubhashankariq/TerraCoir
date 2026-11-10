@@ -224,6 +224,16 @@ function initActivePageHighlight() {
   let currentPage = pathname.split('/').pop() || 'index.html';
   if (currentPage === '' || currentPage === '/') currentPage = 'index.html';
 
+  // Home Dropdown button highlight
+  const homeDropdownBtn = document.querySelector('.home-dropdown-btn');
+  if (homeDropdownBtn) {
+    if (currentPage === 'index.html' || currentPage === 'home-2.html') {
+      homeDropdownBtn.classList.add('active-page');
+    } else {
+      homeDropdownBtn.classList.remove('active-page');
+    }
+  }
+
   // Desktop links
   const navLinks = document.querySelectorAll('header nav a.nav-link');
   navLinks.forEach((link) => {
@@ -300,6 +310,27 @@ function initDirection() {
    5. NAVIGATION & MOBILE HAMBURGER MENU
    ========================================================================== */
 function initNavigation() {
+  // Mobile / touch support for Home dropdown
+  const homeDropdownBtn = document.querySelector('.home-dropdown-btn');
+  const homeDropdownMenu = document.querySelector('.home-dropdown-menu');
+  if (homeDropdownBtn && homeDropdownMenu) {
+    homeDropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isVisible = !homeDropdownMenu.classList.contains('pointer-events-none');
+      if (isVisible) {
+        homeDropdownMenu.classList.add('pointer-events-none', 'opacity-0');
+        homeDropdownBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        homeDropdownMenu.classList.remove('pointer-events-none', 'opacity-0');
+        homeDropdownBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    document.addEventListener('click', () => {
+      homeDropdownMenu.classList.add('pointer-events-none', 'opacity-0');
+      homeDropdownBtn.setAttribute('aria-expanded', 'false');
+    });
+  }
   const menuButtons = document.querySelectorAll('#mobile-menu-toggle, #mobile-menu-btn, .mobile-menu-btn, [aria-label*="menu"]');
   const mobileMenu = document.getElementById('mobile-drawer') || document.getElementById('mobile-menu');
   const menuCloseButtons = document.querySelectorAll('#mobile-drawer-close, #mobile-menu-close, .mobile-menu-close');
